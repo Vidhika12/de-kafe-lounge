@@ -1331,6 +1331,14 @@ img, video {
     gap: 24px;
   }
 
+  .reviews-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
   .offer-container {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1350,6 +1358,24 @@ img, video {
 }
 
 @media (max-width: 640px) {
+  .reviews-summary {
+    grid-template-columns: 1fr;
+    padding: 18px 16px;
+  }
+
+  .reviews-score {
+    align-items: center;
+  }
+
+  .review-card-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review-stars {
+    margin-top: 4px;
+  }
+
   .gallery-grid-3col {
     grid-template-columns: 1fr;
   }
