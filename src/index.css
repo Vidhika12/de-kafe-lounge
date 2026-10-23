@@ -1358,6 +1358,10 @@ img, video {
 }
 
 @media (max-width: 640px) {
+  .container {
+    padding: 0 16px;
+  }
+
   .reviews-summary {
     grid-template-columns: 1fr;
     padding: 18px 16px;
@@ -1374,6 +1378,14 @@ img, video {
 
   .review-stars {
     margin-top: 4px;
+  }
+
+  .review-card {
+    padding: 18px 16px;
+  }
+
+  .review-name {
+    font-size: 0.92rem;
   }
 
   .gallery-grid-3col {
@@ -1409,6 +1421,77 @@ img, video {
   .nav-container {
     padding: 0 16px;
     height: 74px;
+  }
+
+  .menu-item-row {
+    gap: 12px;
+    padding: 12px 12px;
+  }
+
+  .menu-thumb {
+    width: 74px;
+    height: 74px;
+  }
+
+  .menu-item-name {
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+  }
+
+  .menu-item-desc {
+    font-size: 0.82rem;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 10vw, 3rem);
+    letter-spacing: 0.08em;
+  }
+
+  .split-heading {
+    font-size: clamp(1.35rem, 7vw, 1.9rem);
+    letter-spacing: 0.08em;
+  }
+
+  .section-subtitle,
+  .eyebrow-gold {
+    letter-spacing: 0.18em;
+    font-size: 0.64rem;
+  }
+
+  .feature-text {
+    font-size: 0.98rem;
+  }
+
+  .bakery-feature {
+    padding: 72px 0;
+  }
+
+  .bakery-collage {
+    height: 300px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .section-title {
+    font-size: clamp(1.8rem, 10vw, 2.4rem);
+    letter-spacing: 0.06em;
+  }
+
+  .feature-text {
+    font-size: 0.95rem;
+  }
+
+  .bakery-collage {
+    height: 260px;
+  }
+
+  .menu-item-row {
+    align-items: flex-start;
+  }
+
+  .menu-item-top {
+    align-items: flex-start;
   }
 }
 
