@@ -12,28 +12,28 @@ export const BITES_MENU: MenuItem[] = [
     name: 'Chicken Lettuce Cups',
     description: 'A light, refreshing bite of juicy chicken and crisp vegetables tucked into fresh lettuce leaves.',
     category: 'bites',
-    image: '/images/chicken%20lettuce%20cups.jpeg'
+    image: '/images/chicken-lettuce-cups.jpeg'
   },
   {
     id: 'b3',
     name: 'Crispy Corn',
     description: 'Sweet, crunchy corn tossed with signature spices and finished with a zesty café-style seasoning.',
     category: 'bites',
-    image: '/images/crispy%20corn.jpeg'
+    image: '/images/crispy-corn.jpg'
   },
   {
     id: 'b4',
     name: 'Crispy Fish Fingers',
     description: 'Golden-fried fish fingers served with a creamy herb dip and a side of crispy fries.',
     category: 'bites',
-    image: '/images/fish finger.jpeg'
+    image: '/images/fish-fingers.jpeg'
   },
   {
     id: 'b5',
     name: 'Mushroom Cream Cheese Dim Sum',
     description: 'Steamed dim sum filled with savoury mushrooms and a rich cream cheese finish.',
     category: 'bites',
-    image: '/images/mushroom cream cheese dimsum.jpeg'
+    image: '/images/mushroom-dimsum.jpeg'
   }
 ];
 
@@ -43,28 +43,28 @@ export const MAINS_MENU: MenuItem[] = [
     name: 'Burrata Pizza',
     description: 'Wood-fired pizza layered with burrata, tomato sauce, basil and a drizzle of olive oil.',
     category: 'mains',
-    image: '/images/burrata%20pizza.jpeg'
+    image: '/images/burrata-pizza.jpg'
   },
   {
     id: 'm2',
     name: 'English Breakfast',
     description: 'A hearty classic with eggs, toast, grilled tomato, mushrooms and a comforting café-style breakfast spread.',
     category: 'mains',
-    image: '/images/english%20breakfast.jpeg'
+    image: '/images/english-breakfast.jpeg'
   },
   {
     id: 'm3',
     name: 'Pesto Pasta',
     description: 'Fresh basil pesto tossed with perfectly cooked pasta and a rich, comforting finish.',
     category: 'mains',
-    image: '/images/pesto%20pasta.jpeg'
+    image: '/images/pesto-pasta.jpeg'
   },
   {
     id: 'm4',
     name: 'Nasi Goreng Rice',
     description: 'Aromatic fried rice with wok-tossed vegetables, spices and a satisfying café-style kick.',
     category: 'mains',
-    image: '/images/nasi%20gorean%20rice.jpeg'
+    image: '/images/nasi-goreng-rice.jpeg'
   },
   {
     id: 'm5',
@@ -81,7 +81,7 @@ export const DESSERTS_MENU: MenuItem[] = [
     name: 'Blueberry Cheesecake',
     description: 'Silky cheesecake with a bright blueberry topping and a buttery biscuit base.',
     category: 'desserts',
-    image: '/images/blueberry%20cheesecake.jpeg',
+    image: '/images/blueberry-cheesecake.jpeg',
     badge: 'Best Seller'
   },
   {
@@ -89,7 +89,7 @@ export const DESSERTS_MENU: MenuItem[] = [
     name: 'Tiramisu Brownie',
     description: 'A decadent brownie layered with tiramisu-inspired cream and a hint of espresso.',
     category: 'desserts',
-    image: '/images/tiramisu%20brownie.jpeg'
+    image: '/images/tiramisu-brownie.jpeg'
   },
   {
     id: 'd3',
@@ -139,7 +139,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   { id: 'g2', title: 'Birthday Party Setup', category: 'celebrations', categoryLabel: 'Events & Parties', image: '/images/birth.jpg' },
   { id: 'g3', title: 'Frozen Theme Cake', category: 'cakes', categoryLabel: 'Layered in Love', image: '/images/cake-elsa.jpg' },
   { id: 'g4', title: 'Lanterns at Dusk', category: 'interiors', categoryLabel: 'Ambience', image: '/images/lanterns-evening.jpg' },
-  { id: 'g5', title: 'Chicken Lettuce Cups', category: 'food', categoryLabel: 'From Our Kitchen', image: '/images/chicken%20lettuce%20cups.jpeg' },
+  { id: 'g5', title: 'Chicken Lettuce Cups', category: 'food', categoryLabel: 'From Our Kitchen', image: '/images/chicken-lettuce-cups.jpeg' },
   { id: 'g6', title: 'Sizzling Brownie', category: 'food', categoryLabel: 'From Our Kitchen', image: '/images/brownie.jpg' },
   { id: 'g7', title: 'The Coffee Mural Wall', category: 'interiors', categoryLabel: 'Ambience', image: '/images/interior-mural.jpg' },
   { id: 'g8', title: '50th Anniversary Cake', category: 'cakes', categoryLabel: 'Layered in Love', image: '/images/cake-anniversary.jpg' },
@@ -152,7 +152,12 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   { id: 'g15', title: 'Racing Supercar Cake', category: 'cakes', categoryLabel: 'Layered in Love', image: '/images/cake-lamborghini.jpg' },
   { id: 'g16', title: 'The Bakery Counter', category: 'interiors', categoryLabel: 'Ambience', image: '/images/bakery-counter.jpg' },
   { id: 'g17', title: 'Sweet Treats for the Team', category: 'celebrations', categoryLabel: 'Events & Parties', image: '/images/guests.jpg' },
-  { id: 'g18', title: 'A Little Cake Fan', category: 'celebrations', categoryLabel: 'Events & Parties', image: '/images/cake-display.jpg' }
+  { id: 'g18', title: 'A Little Cake Fan', category: 'celebrations', categoryLabel: 'Events & Parties', image: '/images/cake-display.jpg' },
+  { id: 'g19', title: 'Family Birthday Celebration', category: 'celebrations', categoryLabel: 'Events & Parties', image: '/images/birthday-family.jpg' },
+  { id: 'g20', title: 'Fairy Garden Cake Set', category: 'cakes', categoryLabel: 'Layered in Love', image: '/images/cake-fairy-set.jpg' },
+  { id: 'g21', title: 'Superhero Tier Cake', category: 'cakes', categoryLabel: 'Layered in Love', image: '/images/cake-superhero.jpg' },
+  { id: 'g22', title: 'Burrata Pizza', category: 'food', categoryLabel: 'From Our Kitchen', image: '/images/burrata-pizza.jpg' },
+  { id: 'g23', title: 'Crispy Corn', category: 'food', categoryLabel: 'From Our Kitchen', image: '/images/crispy-corn.jpg' }
 ];
 
 // ------------------------------------------------------------

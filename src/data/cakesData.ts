@@ -28,6 +28,26 @@ export const categoryLabel = (id: CakeCategory): string =>
 
 export const CAKES_DATA: CakeItem[] = [
   {
+    id: 'superhero',
+    name: 'Superhero Tier Cake',
+    category: 'kids',
+    image: '/images/cake-superhero.jpg',
+    description:
+      'Three tiers with a city-skyline wrap, comic “BOOM!” and “ZAP!” toppers, hero figurines on every level and a personalised name plaque.',
+    highlights: ['Three tiers', 'Hero figurines', 'Comic toppers'],
+    badge: 'New'
+  },
+  {
+    id: 'fairy-set',
+    name: 'Fairy Garden Cake Set',
+    category: 'kids',
+    image: '/images/cake-fairy-set.jpg',
+    description:
+      'A pastel rainbow cake paired with a stack of five mini cakes that spell out a birthday message, finished with fairies, butterflies, macarons and fresh blooms.',
+    highlights: ['Six-cake set', 'Custom message', 'Fresh flowers'],
+    badge: 'New'
+  },
+  {
     id: 'frozen',
     name: 'Frozen Theme Cake',
     category: 'kids',

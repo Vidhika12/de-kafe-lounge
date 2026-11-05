@@ -4,6 +4,7 @@ import { GALLERY_ITEMS } from '../data/menuData';
 import { GalleryCategory } from '../types';
 import { SITE } from '../data/site';
 import { InstagramIcon } from '../components/Icons';
+import { LoopVideo } from '../components/LoopVideo';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 type Filter = 'all' | GalleryCategory;
@@ -49,6 +50,17 @@ export const Gallery: React.FC = () => {
 
       <section className="gallery-section">
         <div className="container">
+          <div className="gallery-motion">
+            {[
+              ['lounge-dining', 'The dining lounge'],
+              ['lanterns-ceiling', 'Lanterns at night'],
+              ['espresso-machine', 'At the coffee bar'],
+              ['entrance-night', 'Our entrance after dark']
+            ].map(([name, label]) => (
+              <figure key={name}><LoopVideo name={name} label={label} /><figcaption>{label}</figcaption></figure>
+            ))}
+          </div>
+
           <div className="gallery-filters">
             {FILTERS.map((f) => (
               <button
@@ -121,7 +133,7 @@ export const Gallery: React.FC = () => {
                   {active.categoryLabel}
                 </span>
               </div>
-              <span style={{ fontSize: '0.76rem', letterSpacing: '0.14em', color: '#888', textTransform: 'uppercase' }}>
+              <span style={{ fontSize: '0.76rem', letterSpacing: '0.14em', color: 'var(--color-text-on-dark-muted)', textTransform: 'uppercase' }}>
                 {index! + 1} / {items.length}
               </span>
             </div>

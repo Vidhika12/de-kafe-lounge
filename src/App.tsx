@@ -8,15 +8,17 @@ import { About } from './pages/About';
 import { Menu } from './pages/Menu';
 import { Cakes } from './pages/Cakes';
 import { Events } from './pages/Events';
+import { BakingClasses } from './pages/BakingClasses';
 import { Gallery } from './pages/Gallery';
 import { Reservation } from './pages/Reservation';
 import { Contact } from './pages/Contact';
 
 const PAGE_TITLES: Record<string, string> = {
-  '/': 'De Kafe’ Lounge | Café, Bakery & Events in Rammurthy Nagar, Bengaluru',
+  '/': 'De Kafe’ Lounge | Café, Bakery & Multicuisine Restaurant in Rammurthy Nagar, Bengaluru',
   '/about': 'Our Story | De Kafe’ Lounge',
   '/menu': 'Menu | De Kafe’ Lounge',
   '/cakes': 'Custom Cakes by Layered in Love | De Kafe’ Lounge',
+  '/baking-classes': 'Baking Classes by Smita | De Kafe’ Lounge',
   '/events': 'Events & Celebrations | De Kafe’ Lounge',
   '/gallery': 'Gallery | De Kafe’ Lounge',
   '/reservation': 'Book a Table | De Kafe’ Lounge',
@@ -35,7 +37,7 @@ const RouteEffects: React.FC = () => {
 
 export const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <RouteEffects />
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Navbar />
@@ -45,6 +47,7 @@ export const App: React.FC = () => {
             <Route path="/about" element={<About />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/cakes" element={<Cakes />} />
+            <Route path="/baking-classes" element={<BakingClasses />} />
             <Route path="/events" element={<Events />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/reservation" element={<Reservation />} />

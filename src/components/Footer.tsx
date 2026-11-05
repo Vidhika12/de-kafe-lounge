@@ -33,11 +33,11 @@ export const Footer: React.FC = () => {
             <h4 className="footer-col-title">OUR LOUNGE</h4>
             <p className="footer-text" style={{ marginBottom: '16px' }}>
               A sunlit glasshouse café on Kalkere Main Road, Rammurthy Nagar — serving Lavazza coffee,
-              comfort food and custom cakes by Layered in Love. Your one-stop solution for events:
-              venue, catering, décor, customised cakes and return gifts.
+              multicuisine meals, comfort food and custom cakes by Layered in Love. A warm neighbourhood
+              spot for dining, celebrations and memorable moments.
             </p>
             <div className="social-icons">
-              <a href={SITE.instagram} target="_blank" rel="noreferrer" className="social-icon-link" title="Instagram @dekafe_lounge" aria-label="De Kafe’ Lounge on Instagram">
+              <a href={SITE.instagram} target="_blank" rel="noreferrer" className="social-icon-link" title="Instagram @dekafe.lounge" aria-label="De Kafe’ Lounge on Instagram">
                 <InstagramIcon size={16} />
               </a>
               <a href={whatsappLink()} target="_blank" rel="noreferrer" className="social-icon-link" title="WhatsApp" aria-label="Chat on WhatsApp">
@@ -57,6 +57,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/about">Our Story</Link></li>
               <li><Link to="/menu">Menu</Link></li>
               <li><Link to="/cakes">Custom Cakes</Link></li>
+              <li><Link to="/baking-classes">Baking Classes</Link></li>
               <li><Link to="/events">Events & Celebrations</Link></li>
               <li><Link to="/gallery">Gallery</Link></li>
               <li><Link to="/reservation">Book a Table</Link></li>
@@ -91,14 +92,14 @@ export const Footer: React.FC = () => {
           {/* Col 4: Visit */}
           <div>
             <h4 className="footer-col-title">VISIT US</h4>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.84rem', color: '#999' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.84rem', color: 'var(--color-text-on-dark-muted)' }}>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <MapPin size={18} style={{ color: 'var(--color-gold)', flexShrink: 0, marginTop: '2px' }} />
-                <a href={SITE.mapsLink} target="_blank" rel="noreferrer" style={{ color: '#aaa' }}>{SITE.address}</a>
+                <a href={SITE.mapsLink} target="_blank" rel="noreferrer" style={{ color: 'var(--color-text-on-dark-muted)' }}>{SITE.address}</a>
               </div>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <Phone size={16} style={{ color: 'var(--color-gold)', flexShrink: 0, marginTop: '2px' }} />
-                <a href={`tel:${SITE.phoneTel}`} style={{ color: '#ccc' }}>{SITE.phoneDisplay}</a>
+                <a href={`tel:${SITE.phoneTel}`} style={{ color: 'var(--color-text-on-dark)' }}>{SITE.phoneDisplay}</a>
               </div>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <Clock size={16} style={{ color: 'var(--color-gold)', flexShrink: 0, marginTop: '2px' }} />

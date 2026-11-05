@@ -61,7 +61,7 @@ export const Cakes: React.FC = () => {
         </div>
       </section>
 
-      <section style={{ padding: '36px 0 80px', backgroundColor: '#ffffff' }}>
+      <section style={{ padding: '36px 0 80px' }}>
         <div className="container">
           <div className="cake-lookbook-controls">
             <div className="cake-lookbook-categories">
@@ -113,7 +113,7 @@ export const Cakes: React.FC = () => {
             <div className="empty-catalog-state">
               <CakeIcon size={44} style={{ color: 'var(--color-gold)' }} />
               <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', marginTop: '12px' }}>NO CAKES FOUND</h4>
-              <p style={{ color: '#777', fontSize: '0.88rem' }}>
+              <p style={{ color: 'var(--color-text-on-dark-muted)', fontSize: '0.88rem' }}>
                 Nothing matched “{query}” — but Smita can make it! Message us your idea.
               </p>
               <button type="button" className="btn-secondary" onClick={() => { setQuery(''); setCategory('all'); }}>
@@ -132,6 +132,7 @@ export const Cakes: React.FC = () => {
                   onKeyDown={(e) => e.key === 'Enter' && setSelected(cake)}
                 >
                   <div className="lookbook-card-media">
+                    <div className="photo-blur-fill" style={{ backgroundImage: `url(${cake.image})` }} aria-hidden="true" />
                     <img src={cake.image} alt={cake.name} className="lookbook-card-img" loading="lazy" />
                     <div className="lookbook-card-overlay">
                       <span className="lookbook-overlay-text">VIEW & ENQUIRE</span>
@@ -166,10 +167,10 @@ export const Cakes: React.FC = () => {
               <span className="section-subtitle" style={{ textAlign: 'left', marginBottom: '6px' }}>
                 DON’T SEE YOUR IDEA?
               </span>
-              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.9rem', color: '#1a1a1a', marginBottom: '10px' }}>
+              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.9rem', color: 'var(--color-text-on-dark)', marginBottom: '10px' }}>
                 DESIGN YOUR OWN CAKE
               </h3>
-              <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: '1.7' }}>
+              <p style={{ fontSize: '0.9rem', color: 'var(--color-text-on-dark-muted)', lineHeight: '1.7' }}>
                 Send us a reference picture, your theme, flavour and date — Smita will design it from scratch. Please
                 place designer and multi-tier orders in advance so there’s time to craft every detail.
               </p>
@@ -197,6 +198,7 @@ export const Cakes: React.FC = () => {
         <div className="cake-modal-backdrop" onClick={() => setSelected(null)}>
           <div className="cake-modal-box" onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" aria-label={selected.name}>
             <div className="modal-hero-media">
+              <div className="photo-blur-fill" style={{ backgroundImage: `url(${selected.image})` }} aria-hidden="true" />
               <img src={selected.image} alt={selected.name} className="modal-hero-img" />
               {selected.badge && <span className="modal-badge-special">{selected.badge}</span>}
               <button type="button" className="modal-close-floating" onClick={() => setSelected(null)} aria-label="Close">

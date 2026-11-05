@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Calendar, Phone, MapPin } from 'lucide-react';
 import { SITE } from '../data/site';
@@ -9,6 +9,7 @@ const navItems = [
   { path: '/about', label: 'ABOUT' },
   { path: '/menu', label: 'MENU' },
   { path: '/cakes', label: 'CAKES' },
+  { path: '/baking-classes', label: 'BAKING CLASSES' },
   { path: '/events', label: 'EVENTS' },
   { path: '/gallery', label: 'GALLERY' },
   { path: '/contact', label: 'CONTACT' }
@@ -31,6 +32,18 @@ export const Navbar: React.FC = () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // A closed drawer must not be focusable (fixes the "aria-hidden ... retained focus" console warning)
+  const drawerRef = useRef<HTMLElement>(null);
+  useEffect(() => {
+    const el = drawerRef.current;
+    if (!el) return;
+    if (mobileOpen) el.removeAttribute('inert');
+    else {
+      el.setAttribute('inert', '');
+      if (el.contains(document.activeElement)) (document.activeElement as HTMLElement).blur();
+    }
+  }, [mobileOpen]);
 
   useEffect(() => {
     setMobileOpen(false);
@@ -85,12 +98,12 @@ export const Navbar: React.FC = () => {
         <div className="mobile-drawer-backdrop" onClick={() => setMobileOpen(false)} />
       )}
 
-      <aside className={`mobile-drawer ${mobileOpen ? 'open' : ''}`} aria-hidden={!mobileOpen}>
+      <aside ref={drawerRef} className={`mobile-drawer ${mobileOpen ? 'open' : ''}`} aria-label="Mobile menu">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px' }}>
           <Link to="/" className="brand-logo" aria-label="De Kafe’ Lounge — Home">
             <BrandLogo small />
           </Link>
-          <button onClick={() => setMobileOpen(false)} aria-label="Close menu" style={{ color: '#222' }}>
+          <button onClick={() => setMobileOpen(false)} aria-label="Close menu" className="drawer-close">
             <X size={26} />
           </button>
         </div>
@@ -100,22 +113,14 @@ export const Navbar: React.FC = () => {
             <Link
               key={item.path}
               to={item.path}
-              style={{
-                fontFamily: 'var(--font-sans)',
-                fontSize: '0.9rem',
-                fontWeight: 600,
-                letterSpacing: '0.14em',
-                color: location.pathname === item.path ? 'var(--color-gold)' : '#222',
-                padding: '6px 0',
-                borderBottom: '1px solid #f0ede8'
-              }}
+              className={`drawer-link ${location.pathname === item.path ? 'active' : ''}`}
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div style={{ marginTop: 'auto', paddingTop: '24px', borderTop: '1px solid #eae5dd', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+        <div style={{ marginTop: 'auto', paddingTop: '24px', borderTop: '1px solid rgba(197, 168, 128, 0.2)', display: 'flex', flexDirection: 'column', gap: '14px' }}>
           <Link
             to="/reservation"
             className="btn-primary"
@@ -129,7 +134,7 @@ export const Navbar: React.FC = () => {
           <a href={SITE.instagram} target="_blank" rel="noreferrer" className="drawer-contact">
             <span style={{ color: 'var(--color-gold)', display: 'flex' }}><InstagramIcon size={15} /></span> {SITE.instagramHandle}
           </a>
-          <span className="drawer-contact" style={{ color: '#777' }}>
+          <span className="drawer-contact">
             <MapPin size={15} style={{ color: 'var(--color-gold)', flexShrink: 0 }} /> {SITE.shortAddress}
           </span>
         </div>

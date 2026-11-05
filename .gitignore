@@ -5,3 +5,6 @@ dist-ssr/
 .vscode/
 .DS_Store
 *.log
+
+# full-size phone videos (website uses compressed copies in public/videos)
+original-videos/

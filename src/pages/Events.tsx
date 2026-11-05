@@ -5,9 +5,10 @@ import { SectionHeader } from '../components/SectionHeader';
 import { EVENTS } from '../data/menuData';
 import { SITE, whatsappLink } from '../data/site';
 import { WhatsAppIcon } from '../components/Icons';
-import { Check, Calendar, ChefHat } from 'lucide-react';
+import { Check, Calendar } from 'lucide-react';
 import { EventServices } from '../components/EventServices';
 import { EVENT_TAGLINE } from '../data/site';
+import { LoopVideo } from '../components/LoopVideo';
 
 
 export const Events: React.FC = () => {
@@ -16,9 +17,10 @@ export const Events: React.FC = () => {
       <PageBanner title="EVENTS & CELEBRATIONS" breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Events' }]} />
 
       {/* One-stop solution */}
-      <section style={{ padding: '85px 0', backgroundColor: '#faf7f2', borderBottom: '1px solid var(--color-border)' }}>
+      <section style={{ padding: '85px 0', borderBottom: '1px solid var(--color-border)' }}>
         <div className="container">
           <SectionHeader
+            accent="Celebrate with us"
             subtitle={EVENT_TAGLINE.toUpperCase()}
             title="WE PROVIDE EVERYTHING"
             description="No juggling vendors. From the venue and catering to décor, customised cakes and even return gifts — we handle it all, so you can simply enjoy your celebration."
@@ -27,7 +29,7 @@ export const Events: React.FC = () => {
         </div>
       </section>
 
-      <section style={{ padding: '90px 0 40px', backgroundColor: '#ffffff' }}>
+      <section style={{ padding: '90px 0 40px' }}>
         <div className="container">
           <SectionHeader
             subtitle="CELEBRATE AT DE KAFE’"
@@ -68,28 +70,15 @@ export const Events: React.FC = () => {
         </div>
       </section>
 
-      {/* Baking classes */}
-      <section style={{ padding: '90px 0', backgroundColor: '#ffffff' }}>
-        <div className="container split-grid">
-          <div className="framed-photo">
-            <img src="/images/bakery-counter.jpg" alt="The Layered in Love bakery counter at De Kafe’ Lounge" />
-          </div>
-          <div>
-            <span className="eyebrow-gold"><ChefHat size={14} style={{ verticalAlign: '-2px' }} /> LEARN WITH SMITA</span>
-            <h3 className="split-heading">BEGINNER’S BAKING CLASSES</h3>
-            <p className="feature-text">
-              Learn the fundamentals of baking with hands-on guidance from {SITE.bakeryOwner} of Layered in Love, right
-              here at the lounge. A fun, friendly session for complete beginners and home bakers alike.
-            </p>
-            <p className="feature-text" style={{ marginBottom: '26px' }}>
-              Follow {SITE.bakeryHandle} on Instagram for upcoming dates, or message us to join the next batch.
-            </p>
-            <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
-              <a href={whatsappLink('Hi! I am interested in the beginner’s baking class at De Kafe’ Lounge.')} target="_blank" rel="noreferrer" className="btn-primary">
-                <WhatsAppIcon size={16} /> ASK ABOUT CLASSES
-              </a>
-              <a href={SITE.bakeryInstagram} target="_blank" rel="noreferrer" className="btn-secondary">{SITE.bakeryHandle}</a>
-            </div>
+      {/* Real celebrations */}
+      <section style={{ padding: '85px 0' }}>
+        <div className="container">
+          <SectionHeader accent="Moments we’ve hosted" subtitle="REAL CELEBRATIONS" title="FROM OUR LOUNGE" />
+          <div className="celebration-strip">
+            <figure><img src="/images/birthday-family.jpg" alt="A family celebrating a birthday at De Kafe’ Lounge" loading="lazy" /><figcaption>Birthday celebration</figcaption></figure>
+            <figure><LoopVideo name="lanterns-ceiling" label="Lantern-lit ceiling of the lounge" /><figcaption>Our lantern-lit lounge</figcaption></figure>
+            <figure><img src="/images/birth.jpg" alt="Frozen-themed birthday setup" loading="lazy" /><figcaption>Themed party setup</figcaption></figure>
+            <figure><img src="/images/cake-fairy-set.jpg" alt="Fairy garden cake set by Layered in Love" loading="lazy" /><figcaption>Custom cake set</figcaption></figure>
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PageBanner } from '../components/PageBanner';
+import { LoopVideo } from '../components/LoopVideo';
 import { SectionHeader } from '../components/SectionHeader';
 import { SITE } from '../data/site';
 import { Sun, CakeSlice, PartyPopper, Coffee, Calendar, ArrowRight } from 'lucide-react';
@@ -34,13 +35,28 @@ export const About: React.FC = () => {
       <PageBanner title="ABOUT US" breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'About Us' }]} />
 
       {/* Story */}
-      <section style={{ padding: '90px 0', backgroundColor: '#ffffff' }}>
+      <section style={{ padding: '90px 0' }}>
         <div className="container">
           <SectionHeader
             subtitle="OUR STORY"
             title="THE DE KAFE’ STORY"
-            description="A café, a bakery and a celebration space — all under one glass roof in Rammurthy Nagar."
+            description="A café, a bakery and a multicuisine restaurant — all under one glass roof in Rammurthy Nagar."
           />
+
+          <div className="motion-showcase-grid about-video-layout" style={{ marginTop: '24px' }}>
+            <div className="motion-video-frame feature-video-frame">
+              <LoopVideo name="lounge-window-seating" label="De Kafe’ Lounge interiors and window seating" />
+              <div className="video-badge">SUNLIT DURING THE DAY</div>
+            </div>
+            <div className="motion-showcase-copy">
+              <span className="eyebrow-gold">OUR SPACE</span>
+              <h2 className="split-heading" style={{ marginBottom: '12px' }}>A PLACE THAT FEELS LIKE HOME</h2>
+              <p className="feature-text">
+                We wanted the mood to match the food — warm, welcoming and full of character. The glasshouse setting,
+                lantern glow and relaxed seating make it easy to linger a little longer.
+              </p>
+            </div>
+          </div>
 
           <div className="split-grid">
             <div>
@@ -82,7 +98,7 @@ export const About: React.FC = () => {
       </section>
 
       {/* Pillars */}
-      <section style={{ padding: '85px 0', backgroundColor: '#faf7f2', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}>
+      <section style={{ padding: '85px 0', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}>
         <div className="container">
           <SectionHeader
             subtitle="WHAT DEFINES US"
@@ -102,10 +118,10 @@ export const About: React.FC = () => {
       </section>
 
       {/* Bakery split */}
-      <section style={{ padding: '90px 0', backgroundColor: '#ffffff' }}>
+      <section style={{ padding: '90px 0' }}>
         <div className="container split-grid">
           <div className="framed-photo">
-            <img src="/images/cake-castle.jpg" alt="Pastel fairy-tale castle cake by Layered in Love" style={{ objectFit: 'contain', background: '#f5f2ed' }} />
+            <img src="/images/cake-castle.jpg" alt="Pastel fairy-tale castle cake by Layered in Love" style={{ objectFit: 'contain', background: '#1e1814' }} />
           </div>
           <div>
             <span className="eyebrow-gold">MEET THE BAKER</span>
@@ -126,13 +142,13 @@ export const About: React.FC = () => {
       </section>
 
       {/* Note */}
-      <section style={{ padding: '0 0 80px', backgroundColor: '#ffffff' }}>
+      <section style={{ padding: '0 0 80px' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
           <div className="crowd-notice" style={{ padding: '24px 30px' }}>
-            <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', color: '#1a1a1a', letterSpacing: '0.12em', marginBottom: '8px' }}>
+            <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', color: 'var(--color-text-on-dark)', letterSpacing: '0.12em', marginBottom: '8px' }}>
               PLANNING A PARTY OR A SURPRISE?
             </h4>
-            <p style={{ fontSize: '0.88rem', color: '#5a544a', lineHeight: '1.7' }}>
+            <p style={{ fontSize: '0.88rem', color: 'var(--color-text-on-dark-muted)', lineHeight: '1.7' }}>
               Weekends and evenings are our busiest times, and we often host private celebrations. Message us a little in
               advance for birthdays, candlelight setups or group bookings so we can have everything ready for you.
             </p>

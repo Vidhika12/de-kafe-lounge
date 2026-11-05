@@ -57,7 +57,7 @@ export const Menu: React.FC = () => {
     <main>
       <PageBanner title="OUR MENU" breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Menu' }]} />
 
-      <div style={{ backgroundColor: '#faf8f5', padding: '24px 0', borderBottom: '1px solid var(--color-border)' }}>
+      <div style={{ padding: '24px 0', borderBottom: '1px solid var(--color-border)' }}>
         <div className="container">
           <div className="gallery-filters" style={{ margin: 0 }}>
             {(Object.keys(FILTER_LABELS) as Filter[]).map((f) => (
@@ -99,7 +99,7 @@ export const Menu: React.FC = () => {
           <div style={{ maxWidth: '650px' }}>
             <span className="dark-cta-kicker">LAYERED IN LOVE</span>
             <h3 style={{ fontSize: '1.8rem', color: '#fff', marginBottom: '12px' }}>NEED A CUSTOM CAKE?</h3>
-            <p style={{ color: '#aaa', fontSize: '0.92rem', lineHeight: '1.6' }}>
+            <p style={{ color: 'var(--color-text-on-dark-muted)', fontSize: '0.92rem', lineHeight: '1.6' }}>
               Birthday, anniversary, wedding or just because — our in-house bakery creates fully customised cakes for
               every occasion. Message us your theme and date to get started.
             </p>

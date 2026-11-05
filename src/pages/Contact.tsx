@@ -4,6 +4,7 @@ import { SectionHeader } from '../components/SectionHeader';
 import { SITE, whatsappLink } from '../data/site';
 import { InstagramIcon, WhatsAppIcon } from '../components/Icons';
 import { MapPin, Clock, Phone, Send, CheckCircle2 } from 'lucide-react';
+import { LoopVideo } from '../components/LoopVideo';
 
 const EMPTY = { name: '', phone: '', subject: 'Custom Cake Order', message: '' };
 
@@ -26,15 +27,15 @@ export const Contact: React.FC = () => {
     {
       icon: <Phone size={24} />,
       title: 'CALL / WHATSAPP',
-      body: <><a href={`tel:${SITE.phoneTel}`} style={{ fontWeight: 600, color: '#222' }}>{SITE.phoneDisplay}</a><br /><span className="muted-note">Tables, events & cake orders</span></>
+      body: <><a href={`tel:${SITE.phoneTel}`} style={{ fontWeight: 600, color: 'var(--color-text-on-dark)' }}>{SITE.phoneDisplay}</a><br /><span className="muted-note">Tables, events & cake orders</span></>
     },
     {
       icon: <InstagramIcon size={22} />,
       title: 'INSTAGRAM',
       body: (
         <>
-          <a href={SITE.instagram} target="_blank" rel="noreferrer" style={{ fontWeight: 600, color: '#222' }}>{SITE.instagramHandle}</a><br />
-          <a href={SITE.bakeryInstagram} target="_blank" rel="noreferrer" style={{ fontWeight: 600, color: '#222' }}>{SITE.bakeryHandle}</a>
+          <a href={SITE.instagram} target="_blank" rel="noreferrer" style={{ fontWeight: 600, color: 'var(--color-text-on-dark)' }}>{SITE.instagramHandle}</a><br />
+          <a href={SITE.bakeryInstagram} target="_blank" rel="noreferrer" style={{ fontWeight: 600, color: 'var(--color-text-on-dark)' }}>{SITE.bakeryHandle}</a>
         </>
       )
     }
@@ -44,7 +45,7 @@ export const Contact: React.FC = () => {
     <main>
       <PageBanner title="CONTACT & LOCATION" breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Contact' }]} />
 
-      <section style={{ padding: '80px 0', backgroundColor: '#ffffff' }}>
+      <section style={{ padding: '80px 0' }}>
         <div className="container">
           <SectionHeader
             subtitle="FIND US IN RAMMURTHY NAGAR"
@@ -65,7 +66,7 @@ export const Contact: React.FC = () => {
           <div className="contact-split">
             <div className="contact-form-box">
               <h3 className="split-heading" style={{ fontSize: '1.6rem', marginBottom: '8px' }}>SEND US A MESSAGE</h3>
-              <p style={{ fontSize: '0.86rem', color: '#777', marginBottom: '24px' }}>
+              <p style={{ fontSize: '0.86rem', color: 'var(--color-text-on-dark-muted)', marginBottom: '24px' }}>
                 Your message opens in WhatsApp, ready to send — the quickest way to reach us.
               </p>
 
@@ -73,7 +74,7 @@ export const Contact: React.FC = () => {
                 <div style={{ textAlign: 'center', padding: '30px 10px' }}>
                   <CheckCircle2 size={48} style={{ color: 'var(--color-gold)', margin: '0 auto 14px' }} />
                   <h4 style={{ fontSize: '1.3rem', letterSpacing: '0.1em', marginBottom: '8px' }}>ALMOST THERE!</h4>
-                  <p style={{ fontSize: '0.88rem', color: '#666', marginBottom: '20px' }}>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--color-text-on-dark-muted)', marginBottom: '20px' }}>
                     Thanks, <strong>{form.name}</strong>. Just press send in WhatsApp and we’ll reply shortly.
                   </p>
                   <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -138,8 +139,10 @@ export const Contact: React.FC = () => {
                 />
               </div>
               <div className="getting-here">
+                <LoopVideo name="entrance-night" label="The De Kafe’ Lounge entrance lit up at night" className="getting-here-video" />
+                <div className="getting-here-copy">
                 <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.1rem', letterSpacing: '0.1em', marginBottom: '8px' }}>GETTING HERE</h4>
-                <p style={{ fontSize: '0.84rem', color: '#666', lineHeight: '1.7' }}>
+                <p style={{ fontSize: '0.84rem', color: 'var(--color-text-on-dark-muted)', lineHeight: '1.7' }}>
                   We’re on 80 Feet Kalkere Main Road, near Veeranjaneya Temple in Rajkumar Layout, Horamavu Banaswadi — look
                   for the glasshouse lit up with lanterns.
                 </p>
@@ -150,6 +153,7 @@ export const Contact: React.FC = () => {
                   <a href={whatsappLink()} target="_blank" rel="noreferrer" className="btn-primary" style={{ fontSize: '0.72rem', padding: '10px 20px', backgroundColor: '#25D366' }}>
                     <WhatsAppIcon size={14} /> WHATSAPP US
                   </a>
+                </div>
                 </div>
               </div>
             </div>

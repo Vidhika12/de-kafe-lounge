@@ -88,7 +88,7 @@ export const Reservation: React.FC = () => {
                 <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', letterSpacing: '0.12em', color: 'var(--color-dark)', marginBottom: '12px' }}>
                   ALMOST DONE!
                 </h3>
-                <p style={{ fontSize: '0.94rem', color: '#555', maxWidth: '560px', margin: '0 auto 24px', lineHeight: 1.7 }}>
+                <p style={{ fontSize: '0.94rem', color: 'var(--color-text-on-dark-muted)', maxWidth: '560px', margin: '0 auto 24px', lineHeight: 1.7 }}>
                   Thank you, <strong>{form.name}</strong>! WhatsApp has opened with your booking for <strong>{form.guests}</strong> on{' '}
                   <strong>{form.date}</strong> at <strong>{form.time}</strong>. Just press <strong>send</strong> and we’ll confirm shortly.
                 </p>
