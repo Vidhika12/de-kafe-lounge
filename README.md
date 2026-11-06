@@ -1,4 +1,4 @@
-# De Kafe' Lounge — Website
+# De Kafé Lounge — Website
 
 Café · Bakery (Layered in Love) · Events — Rammurthy Nagar, Bengaluru.
 Built with **React + TypeScript + Vite** (design based on the Capella template).

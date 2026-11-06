@@ -39,13 +39,13 @@ export const About: React.FC = () => {
         <div className="container">
           <SectionHeader
             subtitle="OUR STORY"
-            title="THE DE KAFE’ STORY"
+            title="THE DE KAFÉ STORY"
             description="A café, a bakery and a multicuisine restaurant — all under one glass roof in Rammurthy Nagar."
           />
 
           <div className="motion-showcase-grid about-video-layout" style={{ marginTop: '24px' }}>
             <div className="motion-video-frame feature-video-frame">
-              <LoopVideo name="lounge-window-seating" label="De Kafe’ Lounge interiors and window seating" />
+              <LoopVideo name="lounge-window-seating" label="De Kafé Lounge interiors and window seating" />
               <div className="video-badge">SUNLIT DURING THE DAY</div>
             </div>
             <div className="motion-showcase-copy">
@@ -63,7 +63,7 @@ export const About: React.FC = () => {
               <span className="eyebrow-gold">SUNLIGHT BY DAY, LANTERN GLOW BY NIGHT</span>
               <h3 className="split-heading">A GLASSHOUSE CAFE ON KALKERE MAIN ROAD</h3>
               <p className="feature-text">
-                <strong>De Kafe’ Lounge</strong> was built by <strong>Ms. Smita Singh</strong> and <strong>Mr. Augusteen</strong>
+                <strong>De Kafé Lounge</strong> was built by <strong>Ms. Smita Singh</strong> and <strong>Mr. Augusteen</strong>
                 with one simple idea: give the neighbourhood a beautiful place to slow down, eat well and celebrate the moments that matter.
               </p>
               <p className="feature-text">

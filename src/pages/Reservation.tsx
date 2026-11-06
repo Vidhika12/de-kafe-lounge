@@ -39,7 +39,7 @@ export const Reservation: React.FC = () => {
 
   const buildMessage = () =>
     [
-      'Hi De Kafe’ Lounge! I’d like to book a table.',
+      'Hi De Kafé Lounge! I’d like to book a table.',
       '',
       `Name: ${form.name}`,
       `Phone: ${form.phone}`,

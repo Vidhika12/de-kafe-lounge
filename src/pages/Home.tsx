@@ -33,7 +33,7 @@ const OFFERS: Record<OfferTab, { title: string; image: string; text: string; bul
   },
   desserts: {
     title: 'Sizzling Brownie',
-    image: '/images/brownie.jpg',
+    image: '/images/brownie-signature.jpg',
     text: 'A warm chocolate brownie arrives sizzling on a hot plate, drenched in chocolate sauce and crowned with vanilla ice cream and crushed nuts. Pure theatre, pure comfort.',
     bullets: [
       'Served sizzling hot at your table',
@@ -78,7 +78,7 @@ export const Home: React.FC = () => {
   const handleClassEnquiry = (e: React.FormEvent) => {
     e.preventDefault();
     const message = [
-      'Hi De Kafe’ Lounge! I would like to enquire about the baking class by Smita.',
+      'Hi De Kafé Lounge! I would like to enquire about the baking class by Smita.',
       '',
       `Name: ${classForm.name}`,
       `Phone: ${classForm.phone}`,
@@ -107,7 +107,7 @@ export const Home: React.FC = () => {
         <div className="hero-content">
           <p className="script-accent hero-script">a glasshouse café experience</p>
           <h1 className="hero-title-dark">
-            DE KAFE<span className="brand-apos">’</span> LOUNGE
+            DE KAF<span className="brand-apos">É</span> LOUNGE
           </h1>
           <p className="hero-location">RAMMURTHY NAGAR, BENGALURU</p>
           <p className="hero-sub-dark">CAFE · BAKERY · MULTICUISINE RESTAURANT</p>
@@ -152,7 +152,7 @@ export const Home: React.FC = () => {
             <span className="eyebrow-gold">specials</span>
             <h2 className="premium-showcase-title">PREMIUM AUTHENTIC COFFEE</h2>
             <p className="premium-showcase-text">
-              From espresso mornings to after-dinner conversations, De Kafe’ Lounge mixes warm hospitality, slow coffee,
+              From espresso mornings to after-dinner conversations, De Kafé Lounge mixes warm hospitality, slow coffee,
               and meaningful food moments into one beautiful neighbourhood space.
             </p>
             <div className="premium-showcase-meta">
@@ -167,7 +167,7 @@ export const Home: React.FC = () => {
 
           <div className="premium-showcase-media">
             <div className="premium-media-card premium-main-card">
-              <LoopVideo name="lounge-evening" label="De Kafe’ Lounge in the evening" />
+              <LoopVideo name="lounge-evening" label="De Kafé Lounge in the evening" />
             </div>
             <div className="premium-media-card premium-side-card premium-side-top">
               <img src="/images/brownie.jpg" alt="Coffee and dessert setup" loading="lazy" />
@@ -201,7 +201,7 @@ export const Home: React.FC = () => {
 
       {/* SIGNATURES (tabbed) */}
       <section className="offer-section">
-        <div className="offer-bg-watermark">DE KAFE’</div>
+        <div className="offer-bg-watermark">DE KAFÉ</div>
         <div className="container">
           <SectionHeader
             accent="Taste the mood"
@@ -341,7 +341,7 @@ export const Home: React.FC = () => {
         </div>
         <div className="container coffee-video-row">
           <figure className="coffee-video-card">
-            <LoopVideo name="espresso-machine" label="Espresso machine at De Kafe’ Lounge" />
+            <LoopVideo name="espresso-machine" label="Espresso machine at De Kafé Lounge" />
             <figcaption>Pulled fresh on our espresso machine</figcaption>
           </figure>
           <figure className="coffee-video-card">
@@ -365,7 +365,7 @@ export const Home: React.FC = () => {
             <h2 className="section-title" style={{ textAlign: 'left', fontSize: 'clamp(2rem, 4vw, 2.8rem)' }}>LAYERED IN LOVE</h2>
             <div className="gold-divider" style={{ margin: '0 0 20px' }} />
             <p className="feature-text">
-              Every cake at De Kafe’ Lounge is baked by our co-founder <strong>{SITE.bakeryOwner}</strong> under her label
+              Every cake at De Kafé Lounge is baked by our co-founder <strong>{SITE.bakeryOwner}</strong> under her label
               <strong> Layered in Love</strong>. Simple classics or towering designer creations — kids’ themes, first
               birthdays, weddings and anniversaries — each one is customised from scratch to your story.
             </p>
@@ -392,7 +392,7 @@ export const Home: React.FC = () => {
             <h2 className="section-title" style={{ textAlign: 'left', fontSize: 'clamp(2rem, 4vw, 2.8rem)' }}>BAKING CLASSES BY SMITA</h2>
             <div className="gold-divider" style={{ margin: '0 0 20px' }} />
             <p className="feature-text">
-              Hosted offline at De Kafe’ Lounge, our baking classes are designed for beginners and hobby bakers who want a warm, hands-on learning experience with <strong>{SITE.bakeryOwner}</strong>.
+              Hosted offline at De Kafé Lounge, our baking classes are designed for beginners and hobby bakers who want a warm, hands-on learning experience with <strong>{SITE.bakeryOwner}</strong>.
             </p>
             <p className="feature-text">
               Every session includes all materials, tools and ingredients — plus friendly guidance, expert tips and a relaxed, inspiring studio setup.
@@ -403,7 +403,7 @@ export const Home: React.FC = () => {
               <li className="offer-check-item"><Check className="offer-check-icon" size={18} /><span>Beginner-friendly, practical and hands-on</span></li>
             </ul>
             <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
-              <a href={whatsappLink('Hi De Kafe’ Lounge! I would like to enquire about the baking class by Smita.')} target="_blank" rel="noreferrer" className="btn-primary">
+              <a href={whatsappLink('Hi De Kafé Lounge! I would like to enquire about the baking class by Smita.')} target="_blank" rel="noreferrer" className="btn-primary">
                 ENQUIRE ON WHATSAPP <ArrowRight size={16} />
               </a>
               <Link to="/baking-classes" className="btn-secondary">
@@ -589,7 +589,7 @@ export const Home: React.FC = () => {
             <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile tall"><img src="/images/cake-superhero.jpg" alt="Superhero tier cake by Layered in Love" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
             <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile"><img src="/images/burrata-pizza.jpg" alt="Burrata pizza" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
             <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile"><img src="/images/cake-fairy-set.jpg" alt="Fairy garden cake set" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
-            <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile tall"><LoopVideo name="lounge-dining" label="Dining area at De Kafe’ Lounge" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
+            <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile tall"><LoopVideo name="lounge-dining" label="Dining area at De Kafé Lounge" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
             <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile"><img src="/images/birthday-family.jpg" alt="A family birthday celebration at the lounge" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
             <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile"><img src="/images/crispy-corn.jpg" alt="Crispy corn" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
           </div>
@@ -615,13 +615,13 @@ export const Home: React.FC = () => {
               <Link to="/reservation" className="btn-primary" style={{ backgroundColor: 'var(--color-gold)', color: '#1a1a1a' }}>
                 <Calendar size={16} /> BOOK YOUR TABLE
               </Link>
-              <a href={whatsappLink('Hi De Kafe’ Lounge! I would like to plan an event.')} target="_blank" rel="noreferrer" className="btn-secondary btn-outline-light">
+              <a href={whatsappLink('Hi De Kafé Lounge! I would like to plan an event.')} target="_blank" rel="noreferrer" className="btn-secondary btn-outline-light">
                 <WhatsAppIcon size={16} /> PLAN ON WHATSAPP
               </a>
             </div>
           </div>
           <figure className="closing-video-card">
-            <LoopVideo name="entrance-night" label="The De Kafe’ Lounge entrance lit up at night" />
+            <LoopVideo name="entrance-night" label="The De Kafé Lounge entrance lit up at night" />
             <figcaption>Look for our lit-up entrance on Kalkere Main Road</figcaption>
           </figure>
         </div>

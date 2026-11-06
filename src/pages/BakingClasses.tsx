@@ -25,7 +25,7 @@ const CLASS_TYPES = [
 ];
 
 const INCLUDED = [
-  { icon: MapPin, title: 'OFFLINE AT THE CAFÉ', text: 'Classes are held in person at De Kafe’ Lounge, Rammurthy Nagar.' },
+  { icon: MapPin, title: 'OFFLINE AT THE CAFÉ', text: 'Classes are held in person at De Kafé Lounge, Rammurthy Nagar.' },
   { icon: ShoppingBasket, title: 'EVERYTHING PROVIDED', text: 'All ingredients, materials and tools are included — just bring yourself.' },
   { icon: Sparkles, title: 'HANDS-ON & PRACTICAL', text: 'Beginner-friendly guidance, expert tips and plenty of time to practise.' }
 ];
@@ -36,7 +36,7 @@ export const BakingClasses: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const message = [
-      'Hi De Kafe’ Lounge! I would like to enquire about the baking classes by Smita.',
+      'Hi De Kafé Lounge! I would like to enquire about the baking classes by Smita.',
       '',
       `Name: ${form.name}`,
       `Phone: ${form.phone}`,
@@ -61,7 +61,7 @@ export const BakingClasses: React.FC = () => {
             <div className="gold-divider" style={{ margin: '0 0 20px' }} />
             <p className="feature-text">
               Learn to bake with <strong>{SITE.bakeryOwner}</strong>, the baker behind <strong>Layered in Love</strong> and every
-              custom cake at De Kafe’ Lounge. Our classes are designed for beginners and hobby bakers who want a warm,
+              custom cake at De Kafé Lounge. Our classes are designed for beginners and hobby bakers who want a warm,
               hands-on learning experience.
             </p>
             <p className="feature-text">
@@ -74,7 +74,7 @@ export const BakingClasses: React.FC = () => {
               <li className="offer-check-item"><Check className="offer-check-icon" size={18} /><span>Beginner-friendly, practical and hands-on</span></li>
             </ul>
             <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
-              <a href={whatsappLink('Hi De Kafe’ Lounge! I would like to know the upcoming baking class dates.')} target="_blank" rel="noreferrer" className="btn-primary">
+              <a href={whatsappLink('Hi De Kafé Lounge! I would like to know the upcoming baking class dates.')} target="_blank" rel="noreferrer" className="btn-primary">
                 <WhatsAppIcon size={16} /> ASK FOR DATES
               </a>
               <a href={SITE.bakeryInstagram} target="_blank" rel="noreferrer" className="btn-secondary">
@@ -142,7 +142,7 @@ export const BakingClasses: React.FC = () => {
       <section style={{ padding: '90px 0' }}>
         <div className="container split-grid">
           <div className="framed-photo">
-            <img src="/images/bakery-counter.jpg" alt="The Layered in Love bakery counter at De Kafe’ Lounge" loading="lazy" />
+            <img src="/images/bakery-counter.jpg" alt="The Layered in Love bakery counter at De Kafé Lounge" loading="lazy" />
           </div>
           <div>
             <span className="eyebrow-gold">WHAT’S INCLUDED</span>
@@ -174,7 +174,7 @@ export const BakingClasses: React.FC = () => {
             Batches are kept small so everyone gets hands-on time. Message us for the next available date, or follow {SITE.bakeryHandle} on Instagram for announcements.
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
-            <a href={whatsappLink('Hi De Kafe’ Lounge! Please save me a spot in the next baking class.')} target="_blank" rel="noreferrer" className="btn-primary" style={{ backgroundColor: 'var(--color-gold)', color: '#1a1a1a' }}>
+            <a href={whatsappLink('Hi De Kafé Lounge! Please save me a spot in the next baking class.')} target="_blank" rel="noreferrer" className="btn-primary" style={{ backgroundColor: 'var(--color-gold)', color: '#1a1a1a' }}>
               <WhatsAppIcon size={16} /> BOOK ON WHATSAPP
             </a>
             <a href={`tel:${SITE.phoneTel}`} className="btn-secondary btn-outline-light">CALL {SITE.phoneDisplay}</a>

@@ -11,7 +11,7 @@ const ICONS = {
   planning: ClipboardCheck
 } as const;
 
-/** 6-card grid: everything De Kafe’ Lounge handles for an event. */
+/** 6-card grid: everything De Kafé Lounge handles for an event. */
 export const EventServices: React.FC = () => (
   <div className="pillars-grid three">
     {EVENT_SERVICES.map((s) => {

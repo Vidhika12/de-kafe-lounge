@@ -14,15 +14,15 @@ import { Reservation } from './pages/Reservation';
 import { Contact } from './pages/Contact';
 
 const PAGE_TITLES: Record<string, string> = {
-  '/': 'De Kafe’ Lounge | Café, Bakery & Multicuisine Restaurant in Rammurthy Nagar, Bengaluru',
-  '/about': 'Our Story | De Kafe’ Lounge',
-  '/menu': 'Menu | De Kafe’ Lounge',
-  '/cakes': 'Custom Cakes by Layered in Love | De Kafe’ Lounge',
-  '/baking-classes': 'Baking Classes by Smita | De Kafe’ Lounge',
-  '/events': 'Events & Celebrations | De Kafe’ Lounge',
-  '/gallery': 'Gallery | De Kafe’ Lounge',
-  '/reservation': 'Book a Table | De Kafe’ Lounge',
-  '/contact': 'Contact & Location | De Kafe’ Lounge'
+  '/': 'De Kafé Lounge | Café, Bakery & Multicuisine Restaurant in Rammurthy Nagar, Bengaluru',
+  '/about': 'Our Story | De Kafé Lounge',
+  '/menu': 'Menu | De Kafé Lounge',
+  '/cakes': 'Custom Cakes by Layered in Love | De Kafé Lounge',
+  '/baking-classes': 'Baking Classes by Smita | De Kafé Lounge',
+  '/events': 'Events & Celebrations | De Kafé Lounge',
+  '/gallery': 'Gallery | De Kafé Lounge',
+  '/reservation': 'Book a Table | De Kafé Lounge',
+  '/contact': 'Contact & Location | De Kafé Lounge'
 };
 
 // Scroll to top + update the browser tab title on every route change

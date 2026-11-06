@@ -37,7 +37,7 @@ export const Cakes: React.FC = () => {
 
   const enquiryLink = (cake: CakeItem) =>
     whatsappLink(
-      `Hi De Kafe’ Lounge! I'd love a custom cake like the *${cake.name}* by Layered in Love.\n\nOccasion: \nDate needed: \nApprox. guests: \nTheme / name on cake: `
+      `Hi De Kafé Lounge! I'd love a custom cake like the *${cake.name}* by Layered in Love.\n\nOccasion: \nDate needed: \nApprox. guests: \nTheme / name on cake: `
     );
 
   return (
@@ -177,7 +177,7 @@ export const Cakes: React.FC = () => {
             </div>
             <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
               <a
-                href={whatsappLink('Hi De Kafe’ Lounge! I would like to design a custom cake with Layered in Love.')}
+                href={whatsappLink('Hi De Kafé Lounge! I would like to design a custom cake with Layered in Love.')}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-primary"
@@ -231,7 +231,7 @@ export const Cakes: React.FC = () => {
               </div>
 
               <p className="modal-footnote">
-                Baked to order by {SITE.bakeryOwner} · Layered in Love at De Kafe’ Lounge. Colours, size, flavour and
+                Baked to order by {SITE.bakeryOwner} · Layered in Love at De Kafé Lounge. Colours, size, flavour and
                 toppers can all be customised.
               </p>
             </div>

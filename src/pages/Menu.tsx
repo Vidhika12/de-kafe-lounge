@@ -106,7 +106,7 @@ export const Menu: React.FC = () => {
           </div>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <a
-              href={whatsappLink('Hi De Kafe’ Lounge! I would like to order a custom cake from Layered in Love.')}
+              href={whatsappLink('Hi De Kafé Lounge! I would like to order a custom cake from Layered in Love.')}
               target="_blank"
               rel="noreferrer"
               className="btn-primary"

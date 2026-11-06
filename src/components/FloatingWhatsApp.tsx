@@ -4,11 +4,11 @@ import { WhatsAppIcon } from './Icons';
 
 export const FloatingWhatsApp: React.FC = () => (
   <a
-    href={whatsappLink("Hi De Kafe’ Lounge! I have a question.")}
+    href={whatsappLink("Hi De Kafé Lounge! I have a question.")}
     target="_blank"
     rel="noreferrer"
     className="floating-whatsapp"
-    aria-label="Chat with De Kafe’ Lounge on WhatsApp"
+    aria-label="Chat with De Kafé Lounge on WhatsApp"
   >
     <WhatsAppIcon size={26} />
   </a>

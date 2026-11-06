@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
         <div className="footer-top">
           <div className="footer-brand">
             <span className="footer-brand-title">
-              DE KAFE<span style={{ color: 'var(--color-gold)' }}>’</span> LOUNGE
+              DE KAF<span style={{ color: 'var(--color-gold)' }}>É</span> LOUNGE
             </span>
           </div>
 
@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
               spot for dining, celebrations and memorable moments.
             </p>
             <div className="social-icons">
-              <a href={SITE.instagram} target="_blank" rel="noreferrer" className="social-icon-link" title="Instagram @dekafe.lounge" aria-label="De Kafe’ Lounge on Instagram">
+              <a href={SITE.instagram} target="_blank" rel="noreferrer" className="social-icon-link" title="Instagram @dekafe.lounge" aria-label="De Kafé Lounge on Instagram">
                 <InstagramIcon size={16} />
               </a>
               <a href={whatsappLink()} target="_blank" rel="noreferrer" className="social-icon-link" title="WhatsApp" aria-label="Chat on WhatsApp">
@@ -110,7 +110,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} De Kafe’ Lounge, Bengaluru. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} De Kafé Lounge, Bengaluru. All Rights Reserved.</p>
           <p style={{ letterSpacing: '0.08em' }}>Cakes by Layered in Love · Made with love in Rammurthy Nagar</p>
         </div>
       </div>

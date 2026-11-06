@@ -1,10 +1,10 @@
 // ============================================================
-// De Kafe' Lounge — single source of truth for contact details.
+// De Kafé Lounge — single source of truth for contact details.
 // Edit this file to update phone, hours, links, etc. everywhere.
 // ============================================================
 
 export const SITE = {
-  name: "De Kafe’ Lounge",
+  name: "De Kafé Lounge",
   tagline: 'Where every cup tells a story',
   phoneDisplay: '+91 93808 29287',
   phoneTel: '+919380829287',
@@ -49,7 +49,7 @@ export const EVENT_SERVICES = [
 export const EVENT_TAGLINE = 'Your one-stop solution for events';
 
 // ------------------------------------------------------------
-// GOOGLE REVIEWS — copied word-for-word from the De Kafe' Lounge
+// GOOGLE REVIEWS — copied word-for-word from the De Kafé Lounge
 // Google Maps listing (Nov 2026). Long reviews are trimmed with "…".
 // Update the rating/count here when they change on Google.
 // ------------------------------------------------------------

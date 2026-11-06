@@ -13,7 +13,7 @@ export const Contact: React.FC = () => {
   const [sent, setSent] = useState(false);
 
   const message = () =>
-    `Hi De Kafe’ Lounge!\n\nName: ${form.name}\nPhone: ${form.phone}\nRegarding: ${form.subject}\n\n${form.message}`;
+    `Hi De Kafé Lounge!\n\nName: ${form.name}\nPhone: ${form.phone}\nRegarding: ${form.subject}\n\n${form.message}`;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -129,7 +129,7 @@ export const Contact: React.FC = () => {
             <div>
               <div className="map-frame">
                 <iframe
-                  title="Map showing De Kafe’ Lounge location"
+                  title="Map showing De Kafé Lounge location"
                   src={SITE.mapEmbed}
                   width="100%"
                   height="100%"
@@ -139,7 +139,7 @@ export const Contact: React.FC = () => {
                 />
               </div>
               <div className="getting-here">
-                <LoopVideo name="entrance-night" label="The De Kafe’ Lounge entrance lit up at night" className="getting-here-video" />
+                <LoopVideo name="entrance-night" label="The De Kafé Lounge entrance lit up at night" className="getting-here-video" />
                 <div className="getting-here-copy">
                 <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.1rem', letterSpacing: '0.1em', marginBottom: '8px' }}>GETTING HERE</h4>
                 <p style={{ fontSize: '0.84rem', color: 'var(--color-text-on-dark-muted)', lineHeight: '1.7' }}>

@@ -17,7 +17,7 @@ const navItems = [
 
 export const BrandLogo: React.FC<{ small?: boolean }> = ({ small }) => (
   <span className={`nav-logo-badge ${small ? 'small' : ''}`}>
-    <img src="/images/logo.png" alt="De Kafe’ Lounge" className="nav-logo-img" width={560} height={531} />
+    <img src="/images/logo.png" alt="De Kafé Lounge" className="nav-logo-img" width={560} height={531} />
   </span>
 );
 
@@ -60,7 +60,7 @@ export const Navbar: React.FC = () => {
         }`}
       >
         <div className="nav-container">
-          <Link to="/" className="brand-logo" aria-label="De Kafe’ Lounge — Home">
+          <Link to="/" className="brand-logo" aria-label="De Kafé Lounge — Home">
             <BrandLogo />
           </Link>
 
@@ -100,7 +100,7 @@ export const Navbar: React.FC = () => {
 
       <aside ref={drawerRef} className={`mobile-drawer ${mobileOpen ? 'open' : ''}`} aria-label="Mobile menu">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px' }}>
-          <Link to="/" className="brand-logo" aria-label="De Kafe’ Lounge — Home">
+          <Link to="/" className="brand-logo" aria-label="De Kafé Lounge — Home">
             <BrandLogo small />
           </Link>
           <button onClick={() => setMobileOpen(false)} aria-label="Close menu" className="drawer-close">

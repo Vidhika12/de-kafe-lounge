@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DE KAFE' LOUNGE - MASTER STYLESHEET
+   DE KAFÉ LOUNGE - MASTER STYLESHEET
    Glasshouse Cafe, Bakery (Layered in Love) & Events - Rammurthy Nagar, Bengaluru
    ========================================================================== */
 
@@ -3340,7 +3340,7 @@ main > section:nth-of-type(even) {
 
 
 /* ==========================================================================
-   DE KAFE' LOUNGE — ADDITIONS & OVERRIDES
+   DE KAFÉ LOUNGE — ADDITIONS & OVERRIDES
    ========================================================================== */
 
 /* ---------- Brand ---------- */
@@ -4509,3 +4509,36 @@ main > section.closing-cta {
 .lookbook-card-img, .modal-hero-img { position: relative; z-index: 1; }
 .lookbook-card-overlay { z-index: 2; }
 .lookbook-card-badge, .modal-badge-special, .modal-close-floating { z-index: 3; }
+
+/* Signatures: show each photo whole, in its own shape (no circular crop) */
+.offer-visual { min-height: 480px; display: flex; align-items: center; justify-content: center; }
+.offer-plate-frame {
+  width: auto;
+  max-width: 100%;
+  aspect-ratio: auto;
+  border-radius: 24px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(197, 168, 128, 0.35);
+  outline: none;
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.offer-plate-img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 460px;
+  object-fit: contain;
+  border-radius: 16px;
+}
+.offer-plate-frame:hover .offer-plate-img { transform: scale(1.02); }
+@media (max-width: 992px) {
+  .offer-visual { min-height: 0; }
+  .offer-plate-img { max-height: 420px; }
+}
+@media (max-width: 640px) {
+  .offer-plate-frame { width: auto; padding: 7px; border-radius: 18px; }
+  .offer-plate-img { max-height: 340px; border-radius: 12px; }
+}
