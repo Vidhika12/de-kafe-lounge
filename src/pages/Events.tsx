@@ -75,10 +75,10 @@ export const Events: React.FC = () => {
         <div className="container">
           <SectionHeader accent="Moments we’ve hosted" subtitle="REAL CELEBRATIONS" title="FROM OUR LOUNGE" />
           <div className="celebration-strip">
-            <figure><img src="/images/birthday-family.jpg" alt="A family celebrating a birthday at De Kafé Lounge" loading="lazy" /><figcaption>Birthday celebration</figcaption></figure>
+            <figure><img src="/images/birthday-family.webp" alt="A family celebrating a birthday at De Kafé Lounge" loading="lazy" /><figcaption>Birthday celebration</figcaption></figure>
             <figure><LoopVideo name="lanterns-ceiling" label="Lantern-lit ceiling of the lounge" /><figcaption>Our lantern-lit lounge</figcaption></figure>
-            <figure><img src="/images/birth.jpg" alt="Frozen-themed birthday setup" loading="lazy" /><figcaption>Themed party setup</figcaption></figure>
-            <figure><img src="/images/cake-fairy-set.jpg" alt="Fairy garden cake set by Layered in Love" loading="lazy" /><figcaption>Custom cake set</figcaption></figure>
+            <figure><img src="/images/birth.webp" alt="Frozen-themed birthday setup" loading="lazy" /><figcaption>Themed party setup</figcaption></figure>
+            <figure><img src="/images/cake-fairy-set.webp" alt="Fairy garden cake set by Layered in Love" loading="lazy" /><figcaption>Custom cake set</figcaption></figure>
           </div>
         </div>
       </section>

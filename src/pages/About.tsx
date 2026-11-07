@@ -86,7 +86,7 @@ export const About: React.FC = () => {
 
             <div style={{ position: 'relative' }}>
               <div className="framed-photo">
-                <img src="/images/lanterns-evening.jpg" alt="Cane lanterns glowing under the glass roof at dusk" />
+                <img src="/images/lanterns-evening.webp" alt="Cane lanterns glowing under the glass roof at dusk" />
               </div>
               <div className="photo-badge">
                 <span className="photo-badge-title">OPEN DAILY</span>
@@ -121,7 +121,7 @@ export const About: React.FC = () => {
       <section style={{ padding: '90px 0' }}>
         <div className="container split-grid">
           <div className="framed-photo">
-            <img src="/images/cake-castle.jpg" alt="Pastel fairy-tale castle cake by Layered in Love" style={{ objectFit: 'contain', background: '#1e1814' }} />
+            <img src="/images/cake-castle.webp" alt="Pastel fairy-tale castle cake by Layered in Love" style={{ objectFit: 'contain', background: '#1e1814' }} />
           </div>
           <div>
             <span className="eyebrow-gold">MEET THE BAKER</span>

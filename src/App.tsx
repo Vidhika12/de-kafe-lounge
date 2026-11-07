@@ -9,6 +9,7 @@ import { Menu } from './pages/Menu';
 import { Cakes } from './pages/Cakes';
 import { Events } from './pages/Events';
 import { BakingClasses } from './pages/BakingClasses';
+import { Hampers } from './pages/Hampers';
 import { Gallery } from './pages/Gallery';
 import { Reservation } from './pages/Reservation';
 import { Contact } from './pages/Contact';
@@ -19,6 +20,7 @@ const PAGE_TITLES: Record<string, string> = {
   '/menu': 'Menu | De Kafé Lounge',
   '/cakes': 'Custom Cakes by Layered in Love | De Kafé Lounge',
   '/baking-classes': 'Baking Classes by Smita | De Kafé Lounge',
+  '/hampers': 'Customised Gift Hampers | De Kafé Lounge',
   '/events': 'Events & Celebrations | De Kafé Lounge',
   '/gallery': 'Gallery | De Kafé Lounge',
   '/reservation': 'Book a Table | De Kafé Lounge',
@@ -48,6 +50,7 @@ export const App: React.FC = () => {
             <Route path="/menu" element={<Menu />} />
             <Route path="/cakes" element={<Cakes />} />
             <Route path="/baking-classes" element={<BakingClasses />} />
+            <Route path="/hampers" element={<Hampers />} />
             <Route path="/events" element={<Events />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/reservation" element={<Reservation />} />

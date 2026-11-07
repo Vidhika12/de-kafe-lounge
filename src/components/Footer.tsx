@@ -58,6 +58,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/menu">Menu</Link></li>
               <li><Link to="/cakes">Custom Cakes</Link></li>
               <li><Link to="/baking-classes">Baking Classes</Link></li>
+              <li><Link to="/hampers">Gift Hampers</Link></li>
               <li><Link to="/events">Events & Celebrations</Link></li>
               <li><Link to="/gallery">Gallery</Link></li>
               <li><Link to="/reservation">Book a Table</Link></li>

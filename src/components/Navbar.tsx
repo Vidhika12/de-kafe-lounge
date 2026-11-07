@@ -10,6 +10,7 @@ const navItems = [
   { path: '/menu', label: 'MENU' },
   { path: '/cakes', label: 'CAKES' },
   { path: '/baking-classes', label: 'BAKING CLASSES' },
+  { path: '/hampers', label: 'HAMPERS' },
   { path: '/events', label: 'EVENTS' },
   { path: '/gallery', label: 'GALLERY' },
   { path: '/contact', label: 'CONTACT' }

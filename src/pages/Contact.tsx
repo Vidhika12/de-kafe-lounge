@@ -103,6 +103,7 @@ export const Contact: React.FC = () => {
                       <option>Event / Party Booking</option>
                       <option>Table Reservation</option>
                       <option>Baking Class</option>
+                      <option>Gift Hampers</option>
                       <option>Feedback</option>
                       <option>Other</option>
                     </select>

@@ -42,7 +42,7 @@ export const EVENT_SERVICES = [
   { key: 'catering', title: 'CATERING SERVICE', text: 'Complete party menus — welcome drinks, snacks, platters, mains and desserts for your guests.' },
   { key: 'decor', title: 'DÉCOR & THEMES', text: 'Themed backdrops, balloons, florals, fairy lights, neon signs and table styling.' },
   { key: 'cakes', title: 'CUSTOMISED CAKES', text: 'A cake designed around your celebration by our in-house bakery, Layered in Love.' },
-  { key: 'gifts', title: 'RETURN GIFTS', text: 'Thoughtful return gifts and goodie hampers for your guests, picked to match your theme.' },
+  { key: 'gifts', title: 'RETURN GIFTS', text: 'Customised hampers and return gifts for your guests — you choose what goes inside, to suit your budget.' },
   { key: 'planning', title: 'END-TO-END PLANNING', text: 'One point of contact from the first idea to the last guest leaving — you just enjoy the day.' }
 ] as const;
 

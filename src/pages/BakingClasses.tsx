@@ -142,7 +142,7 @@ export const BakingClasses: React.FC = () => {
       <section style={{ padding: '90px 0' }}>
         <div className="container split-grid">
           <div className="framed-photo">
-            <img src="/images/bakery-counter.jpg" alt="The Layered in Love bakery counter at De Kafé Lounge" loading="lazy" />
+            <img src="/images/bakery-counter.webp" alt="The Layered in Love bakery counter at De Kafé Lounge" loading="lazy" />
           </div>
           <div>
             <span className="eyebrow-gold">WHAT’S INCLUDED</span>

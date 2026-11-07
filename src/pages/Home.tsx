@@ -9,10 +9,10 @@ import { InstagramIcon, WhatsAppIcon } from '../components/Icons';
 import { LoopVideo } from '../components/LoopVideo';
 import { Check, ArrowRight, Calendar, Star, Coffee, MapPin, Flame } from 'lucide-react';
 
+// Full-resolution, wide photos only (portrait photos look blurry when stretched across a wide screen)
 const HERO_SLIDES = [
-  '/images/hero-interior.jpg',
-  '/images/lanterns-evening.jpg',
-  '/images/interior-mural.jpg'
+  '/images/hero/hero-interior.webp',
+  '/images/hero/interior-mural.webp'
 ];
 
 type OfferTab = 'meals' | 'desserts' | 'cakes';
@@ -20,7 +20,7 @@ type OfferTab = 'meals' | 'desserts' | 'cakes';
 const OFFERS: Record<OfferTab, { title: string; image: string; text: string; bullets: string[]; link: string; linkLabel: string }> = {
   meals: {
     title: 'Burrata Pizza',
-    image: '/images/burrata-pizza.jpg',
+    image: '/images/burrata-pizza.webp',
     text: 'A rich, comforting classic with burrata, tomato sauce and basil — perfect for sharing over good conversation and a slow coffee after.',
     bullets: [
       'Wood-fired flavour with creamy burrata',
@@ -33,7 +33,7 @@ const OFFERS: Record<OfferTab, { title: string; image: string; text: string; bul
   },
   desserts: {
     title: 'Sizzling Brownie',
-    image: '/images/brownie-signature.jpg',
+    image: '/images/brownie-signature.webp',
     text: 'A warm chocolate brownie arrives sizzling on a hot plate, drenched in chocolate sauce and crowned with vanilla ice cream and crushed nuts. Pure theatre, pure comfort.',
     bullets: [
       'Served sizzling hot at your table',
@@ -46,7 +46,7 @@ const OFFERS: Record<OfferTab, { title: string; image: string; text: string; bul
   },
   cakes: {
     title: 'Custom Cakes by Layered in Love',
-    image: '/images/cake-elsa.jpg',
+    image: '/images/cake-elsa.webp',
     text: 'Our in-house bakery, led by co-founder Smita Singh, creates every cake to order — from simple classics to multi-tier designer showpieces for birthdays, weddings and anniversaries.',
     bullets: [
       'Fully customised themes, colours and toppers',
@@ -167,13 +167,13 @@ export const Home: React.FC = () => {
 
           <div className="premium-showcase-media">
             <div className="premium-media-card premium-main-card">
-              <LoopVideo name="lounge-evening" label="De Kafé Lounge in the evening" />
+              <LoopVideo name="lounge-evening-hd" label="De Kafé Lounge in the evening" />
             </div>
             <div className="premium-media-card premium-side-card premium-side-top">
-              <img src="/images/brownie.jpg" alt="Coffee and dessert setup" loading="lazy" />
+              <img src="/images/brownie.webp" alt="Coffee and dessert setup" loading="lazy" />
             </div>
             <div className="premium-media-card premium-side-card premium-side-bottom">
-              <img src="/images/cake-anniversary.jpg" alt="Custom celebration cake" loading="lazy" />
+              <img src="/images/cake-anniversary.webp" alt="Custom celebration cake" loading="lazy" />
             </div>
           </div>
         </div>
@@ -355,9 +355,9 @@ export const Home: React.FC = () => {
       <section className="bakery-feature">
         <div className="container bakery-feature-grid">
           <div className="bakery-collage">
-            <img src="/images/cake-anniversary.jpg" alt="Three-tier anniversary cake with fresh roses" className="collage-main" loading="lazy" />
-            <img src="/images/cake-unicorn.jpg" alt="Pastel unicorn cake" className="collage-side collage-top" loading="lazy" />
-            <img src="/images/cake-birthday-boy.jpg" alt="Red and gold first-birthday cake" className="collage-side collage-bottom" loading="lazy" />
+            <img src="/images/cake-anniversary.webp" alt="Three-tier anniversary cake with fresh roses" className="collage-main" loading="lazy" />
+            <img src="/images/cake-unicorn.webp" alt="Pastel unicorn cake" className="collage-side collage-top" loading="lazy" />
+            <img src="/images/cake-birthday-boy.webp" alt="Red and gold first-birthday cake" className="collage-side collage-bottom" loading="lazy" />
           </div>
 
           <div>
@@ -441,6 +441,33 @@ export const Home: React.FC = () => {
                 SEND ENQUIRY <ArrowRight size={16} />
               </button>
             </form>
+          </div>
+        </div>
+      </section>
+
+      {/* GIFT HAMPERS */}
+      <section className="home-hampers-section">
+        <div className="container split-grid">
+          <div>
+            <span className="script-accent" style={{ textAlign: 'left' }}>Made to gift</span>
+            <span className="section-subtitle" style={{ textAlign: 'left' }}>CUSTOMISED FOR ANY OCCASION</span>
+            <h2 className="section-title" style={{ textAlign: 'left', fontSize: 'clamp(2rem, 4vw, 2.8rem)' }}>GIFT HAMPERS</h2>
+            <div className="gold-divider" style={{ margin: '0 0 20px' }} />
+            <p className="feature-text">
+              Diwali, weddings, birthdays or corporate gifting — choose what goes inside, set your budget, and we’ll hand-wrap
+              every hamper beautifully. One gift or a hundred.
+            </p>
+            <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginTop: '22px' }}>
+              <Link to="/hampers" className="btn-primary">EXPLORE HAMPERS <ArrowRight size={16} /></Link>
+              <a href={whatsappLink('Hi De Kafé Lounge! I would like to know more about your customised hampers.')} target="_blank" rel="noreferrer" className="btn-secondary">
+                <WhatsAppIcon size={16} /> ASK ON WHATSAPP
+              </a>
+            </div>
+          </div>
+          <div className="hamper-photos">
+            <figure className="hamper-photo main"><img src="/images/hamper-kraft.webp" alt="Kraft gift hamper with cream tulle and a white rosette" loading="lazy" /></figure>
+            <figure className="hamper-photo side"><img src="/images/hamper-embroidered.webp" alt="Embroidered gift box hamper with a gold organza bow" loading="lazy" /></figure>
+            <span className="hamper-tag">Diwali 2026</span>
           </div>
         </div>
       </section>
@@ -586,12 +613,12 @@ export const Home: React.FC = () => {
             </a>
           </div>
           <div className="insta-grid">
-            <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile tall"><img src="/images/cake-superhero.jpg" alt="Superhero tier cake by Layered in Love" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
-            <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile"><img src="/images/burrata-pizza.jpg" alt="Burrata pizza" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
-            <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile"><img src="/images/cake-fairy-set.jpg" alt="Fairy garden cake set" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
+            <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile tall"><img src="/images/cake-superhero.webp" alt="Superhero tier cake by Layered in Love" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
+            <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile"><img src="/images/burrata-pizza.webp" alt="Burrata pizza" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
+            <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile"><img src="/images/cake-fairy-set.webp" alt="Fairy garden cake set" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
             <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile tall"><LoopVideo name="lounge-dining" label="Dining area at De Kafé Lounge" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
-            <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile"><img src="/images/birthday-family.jpg" alt="A family birthday celebration at the lounge" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
-            <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile"><img src="/images/crispy-corn.jpg" alt="Crispy corn" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
+            <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile"><img src="/images/birthday-family.webp" alt="A family birthday celebration at the lounge" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
+            <a href={SITE.instagram} target="_blank" rel="noreferrer" className="insta-tile"><img src="/images/crispy-corn.webp" alt="Crispy corn" loading="lazy" /><span className="insta-tile-icon"><InstagramIcon size={18} /></span></a>
           </div>
         </div>
       </section>

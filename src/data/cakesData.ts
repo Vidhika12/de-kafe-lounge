@@ -31,7 +31,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'superhero',
     name: 'Superhero Tier Cake',
     category: 'kids',
-    image: '/images/cake-superhero.jpg',
+    image: '/images/cake-superhero.webp',
     description:
       'Three tiers with a city-skyline wrap, comic “BOOM!” and “ZAP!” toppers, hero figurines on every level and a personalised name plaque.',
     highlights: ['Three tiers', 'Hero figurines', 'Comic toppers'],
@@ -41,7 +41,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'fairy-set',
     name: 'Fairy Garden Cake Set',
     category: 'kids',
-    image: '/images/cake-fairy-set.jpg',
+    image: '/images/cake-fairy-set.webp',
     description:
       'A pastel rainbow cake paired with a stack of five mini cakes that spell out a birthday message, finished with fairies, butterflies, macarons and fresh blooms.',
     highlights: ['Six-cake set', 'Custom message', 'Fresh flowers'],
@@ -51,7 +51,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'frozen',
     name: 'Frozen Theme Cake',
     category: 'kids',
-    image: '/images/cake-elsa.jpg',
+    image: '/images/cake-elsa.webp',
     description:
       'A two-tier ice-blue beauty with a flowing fondant gown, sugar snowflakes, pearl spheres and a gold name topper.',
     highlights: ['Two tiers', 'Fondant gown', 'Personalised name'],
@@ -61,7 +61,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'castle',
     name: 'Fairy-Tale Castle Cake',
     category: 'kids',
-    image: '/images/cake-castle.jpg',
+    image: '/images/cake-castle.webp',
     description:
       'Pastel watercolour tiers topped with pink towers and gold-textured spires, finished with fresh blooms and butterflies.',
     highlights: ['Sculpted towers', 'Fresh flowers', 'Showpiece cake'],
@@ -71,7 +71,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'unicorn',
     name: 'Pastel Unicorn Cake',
     category: 'kids',
-    image: '/images/cake-unicorn.jpg',
+    image: '/images/cake-unicorn.webp',
     description:
       'A dreamy unicorn with a golden horn, rainbow rosette mane, braided fondant trim and a rainbow arch below.',
     highlights: ['Gold horn & ears', 'Rainbow rosettes', 'Name letters']
@@ -80,7 +80,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'mickey',
     name: 'Mickey & Minnie Cake',
     category: 'kids',
-    image: '/images/cake-mickey.jpg',
+    image: '/images/cake-mickey.webp',
     description:
       'Blush-pink buttercream with a fondant bow, polka dots, flower cut-outs and a sculpted age number.',
     highlights: ['Fondant bow', 'Age topper', 'Character toppers']
@@ -89,7 +89,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'rainbow',
     name: 'Rainbow First Birthday',
     category: 'firstbirthday',
-    image: '/images/cake-rainbow.jpg',
+    image: '/images/cake-rainbow.webp',
     description:
       'A cheerful two-tier cake with a fondant rainbow, fluffy clouds, sunflowers, a baby elephant and alphabet name blocks.',
     highlights: ['Hand-made figurines', 'Name blocks', 'Two tiers']
@@ -98,7 +98,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'birthday-boy',
     name: 'Royal Red First Birthday',
     category: 'firstbirthday',
-    image: '/images/cake-birthday-boy.jpg',
+    image: '/images/cake-birthday-boy.webp',
     description:
       'Deep red ombré tiers with gold butterflies, metallic spheres, palm-leaf fans and a see-through surprise tier.',
     highlights: ['Acrylic surprise tier', 'Gold accents', 'Elephant figurines']
@@ -107,7 +107,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'doll',
     name: 'Lavender Doll First Birthday',
     category: 'firstbirthday',
-    image: '/images/cake-doll.jpg',
+    image: '/images/cake-doll.webp',
     description:
       'Lavender and gold tiers with hand-crafted fondant dolls, iridescent bubbles, butterflies and a floral surprise tier.',
     highlights: ['Fondant dolls', 'Surprise tier', 'Gold butterflies']
@@ -116,7 +116,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'wedding',
     name: 'Bride & Groom Portrait Cake',
     category: 'celebration',
-    image: '/images/cake-wedding.jpg',
+    image: '/images/cake-wedding.webp',
     description:
       'Your own photo printed as the centrepiece, with a ruffled buttercream gown, pearl detailing and fresh roses.',
     highlights: ['Photo print', 'Ruffled gown', 'Fresh roses']
@@ -125,7 +125,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'anniversary',
     name: 'Golden Anniversary Florals',
     category: 'celebration',
-    image: '/images/cake-anniversary.jpg',
+    image: '/images/cake-anniversary.webp',
     description:
       'Three elegant tiers cascading with fresh pink and white roses, gold-leaf edges, butterflies and satin ribbon.',
     highlights: ['Three tiers', 'Fresh roses', 'Gold detailing'],
@@ -135,7 +135,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'cricket',
     name: 'Cricket Ball Cake',
     category: 'hobby',
-    image: '/images/cake-cricket.jpg',
+    image: '/images/cake-cricket.webp',
     description:
       'A glossy sculpted cricket ball resting on a piped-grass pitch, complete with a fondant bat and name banner.',
     highlights: ['Sculpted 3D ball', 'Piped grass', 'Name banner']
@@ -144,7 +144,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'football',
     name: 'Football Fan Cake',
     category: 'hobby',
-    image: '/images/cake-ronaldo.jpg',
+    image: '/images/cake-ronaldo.webp',
     description:
       'Textured white buttercream with piped grass, football toppers and your favourite player on the front.',
     highlights: ['Player toppers', 'Piped grass', 'Name letters']
@@ -153,7 +153,7 @@ export const CAKES_DATA: CakeItem[] = [
     id: 'supercar',
     name: 'Racing Supercar Cake',
     category: 'hobby',
-    image: '/images/cake-lamborghini.jpg',
+    image: '/images/cake-lamborghini.webp',
     description:
       'Bright yellow with a glossy black drip, a hand-sculpted fondant car and chequered racing flags.',
     highlights: ['Sculpted fondant car', 'Chocolate drip', 'Racing flags']

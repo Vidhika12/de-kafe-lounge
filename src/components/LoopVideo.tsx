@@ -42,7 +42,7 @@ export const LoopVideo: React.FC<LoopVideoProps> = ({ name, label, className }) 
       ref={ref}
       className={className}
       src={`/videos/${name}.mp4`}
-      poster={`/videos/${name}.jpg`}
+      poster={`/videos/${name}.webp`}
       muted
       loop
       playsInline
