@@ -100,7 +100,6 @@ const MENU_SCHEMA = {
 export const Menu: React.FC = () => {
   const [filter, setFilter] = useState<Filter>('all');
 
-  console.log('MENU SCHEMA:', MENU_SCHEMA);
   return (
     <main>
       <Helmet>
