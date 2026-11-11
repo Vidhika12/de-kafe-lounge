@@ -55,6 +55,14 @@ export const Reservation: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    (window as Window & {
+        gtag?: (...args: any[]) => void;
+    }).gtag?.('event', 'whatsapp_booking_initiated', {
+        event_category: 'Booking',
+        event_label: 'Reservation Form'
+    });
+    
     window.open(whatsappLink(buildMessage()), '_blank', 'noopener');
     setSent(true);
   };
