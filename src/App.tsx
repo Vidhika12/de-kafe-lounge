@@ -14,33 +14,12 @@ import { Gallery } from './pages/Gallery';
 import { Reservation } from './pages/Reservation';
 import { Contact } from './pages/Contact';
 
-const PAGE_TITLES: Record<string, string> = {
-  '/': 'De Kafé Lounge | Café, Bakery & Multicuisine Restaurant in Rammurthy Nagar, Bengaluru',
-  '/about': 'Our Story | De Kafé Lounge',
-  '/menu': 'Menu | De Kafé Lounge',
-  '/cakes': 'Custom Cakes by Layered in Love | De Kafé Lounge',
-  '/baking-classes': 'Baking Classes by Smita | De Kafé Lounge',
-  '/hampers': 'Customised Gift Hampers | De Kafé Lounge',
-  '/events': 'Events & Celebrations | De Kafé Lounge',
-  '/gallery': 'Gallery | De Kafé Lounge',
-  '/reservation': 'Book a Table | De Kafé Lounge',
-  '/contact': 'Contact & Location | De Kafé Lounge'
-};
 
-// Scroll to top + update the browser tab title on every route change
-const RouteEffects: React.FC = () => {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = PAGE_TITLES[pathname] ?? PAGE_TITLES['/'];
-  }, [pathname]);
-  return null;
-};
 
 export const App: React.FC = () => {
   return (
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
-      <RouteEffects />
+      
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Navbar />
         <div style={{ flex: 1 }}>

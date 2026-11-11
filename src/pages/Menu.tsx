@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PageBanner } from '../components/PageBanner';
@@ -50,11 +51,69 @@ const FILTER_LABELS: Record<Filter, string> = {
   drinks: 'BEVERAGES'
 };
 
+
+const MENU_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "Menu",
+  "name": "De Kafé Lounge Menu",
+  "description": "Explore bites, sandwiches, pizzas, pasta, desserts, coffee and beverages at De Kafé Lounge in Ramamurthy Nagar, Bengaluru.",
+  "url": "https://dekafeloungeblr.com/menu",
+  "hasMenuSection": [
+    {
+      "@type": "MenuSection",
+      "name": "Bites & Sandwiches",
+      "hasMenuItem": BITES_MENU.map(item => ({
+        "@type": "MenuItem",
+        "name": item.name,
+        "description": item.description
+      }))
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Pizza & Pasta",
+      "hasMenuItem": MAINS_MENU.map(item => ({
+        "@type": "MenuItem",
+        "name": item.name,
+        "description": item.description
+      }))
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Desserts",
+      "hasMenuItem": DESSERTS_MENU.map(item => ({
+        "@type": "MenuItem",
+        "name": item.name,
+        "description": item.description
+      }))
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Coffee & Beverages",
+      "hasMenuItem": DRINKS_MENU.map(item => ({
+        "@type": "MenuItem",
+        "name": item.name,
+        "description": item.description
+      }))
+    }
+  ]
+};
 export const Menu: React.FC = () => {
   const [filter, setFilter] = useState<Filter>('all');
 
+  console.log('MENU SCHEMA:', MENU_SCHEMA);
   return (
     <main>
+      <Helmet>
+       <title>Restaurant Menu | De Kafé Lounge, Ramamurthy Nagar</title>
+       <meta
+       name="description"
+       content="Explore the menu at De Kafé Lounge, Bengaluru. Enjoy pizzas, pasta, burgers, sandwiches, desserts, coffee and refreshing beverages at our Kalkere café."
+  />
+       <link rel="canonical" href="https://dekafeloungeblr.com/menu" />
+       <script type="application/ld+json">
+  {JSON.stringify(MENU_SCHEMA)}
+</script>
+     </Helmet>
       <PageBanner title="OUR MENU" breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Menu' }]} />
 
       <div style={{ padding: '24px 0', borderBottom: '1px solid var(--color-border)' }}>

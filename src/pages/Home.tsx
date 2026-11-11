@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SectionHeader } from '../components/SectionHeader';
@@ -92,6 +93,14 @@ export const Home: React.FC = () => {
 
   return (
     <main>
+      <Helmet>
+  <title>De Kafé Lounge | Café, Bakery & Restaurant in Ramamurthy Nagar</title>
+  <meta
+    name="description"
+    content="Visit De Kafé Lounge, a glasshouse café in Ramamurthy Nagar, Bengaluru, for Lavazza coffee, multicuisine dining, custom cakes, desserts and memorable celebrations."
+  />
+  <link rel="canonical" href="https://dekafeloungeblr.com/" />
+</Helmet>
       {/* HERO — crossfading photos of the lounge */}
       <section className="hero-video-section">
         {HERO_SLIDES.map((src, i) => (
