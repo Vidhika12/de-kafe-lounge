@@ -49,7 +49,7 @@ const OFFERS: Record<OfferTab, { title: string; image: string; text: string; bul
   cakes: {
     title: 'Custom Cakes by Layered in Love',
     image: '/images/cake-elsa.webp',
-    text: 'Our in-house bakery, led by co-founder Smita Singh, creates every cake to order — from simple classics to multi-tier designer showpieces for birthdays, weddings and anniversaries.',
+    text: 'Our in-house bakery, led by co-founder Smitaa Prakash, creates every cake to order — from simple classics to multi-tier designer showpieces for birthdays, weddings and anniversaries.',
     bullets: [
       'Fully customised themes, colours and toppers',
       'Kids’ themes, first birthdays & milestone cakes',
@@ -80,7 +80,7 @@ export const Home: React.FC = () => {
   const handleClassEnquiry = (e: React.FormEvent) => {
     e.preventDefault();
     const message = [
-      'Hi De Kafé Lounge! I would like to enquire about the baking class by Smita.',
+      'Hi De Kafé Lounge! I would like to enquire about the baking class by Smitaa.',
       '',
       `Name: ${classForm.name}`,
       `Phone: ${classForm.phone}`,
@@ -380,7 +380,7 @@ export const Home: React.FC = () => {
               birthdays, weddings and anniversaries — each one is customised from scratch to your story.
             </p>
             <p className="feature-text">
-              Share your theme, colours and date, and Smita will design a cake that looks as good as it tastes.
+              Share your theme, colours and date, and Smitaa will design a cake that looks as good as it tastes.
             </p>
             <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginTop: '26px' }}>
               <Link to="/cakes" className="btn-primary">
@@ -394,12 +394,12 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* BAKING CLASSES BY SMITA */}
+      {/* BAKING CLASSES BY SMITAA PRAKASH */}
       <section className="home-workshops-section">
         <div className="container split-grid">
           <div className="workshops-copy">
             <span className="section-subtitle" style={{ textAlign: 'left' }}>OFFLINE WORKSHOPS</span>
-            <h2 className="section-title" style={{ textAlign: 'left', fontSize: 'clamp(2rem, 4vw, 2.8rem)' }}>BAKING CLASSES BY SMITA</h2>
+            <h2 className="section-title" style={{ textAlign: 'left', fontSize: 'clamp(2rem, 4vw, 2.8rem)' }}>BAKING CLASSES BY SMITAA PRAKASH</h2>
             <div className="gold-divider" style={{ margin: '0 0 20px' }} />
             <p className="feature-text">
               Hosted offline at De Kafé Lounge, our baking classes are designed for beginners and hobby bakers who want a warm, hands-on learning experience with <strong>{SITE.bakeryOwner}</strong>.
@@ -413,7 +413,7 @@ export const Home: React.FC = () => {
               <li className="offer-check-item"><Check className="offer-check-icon" size={18} /><span>Beginner-friendly, practical and hands-on</span></li>
             </ul>
             <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
-              <a href={whatsappLink('Hi De Kafé Lounge! I would like to enquire about the baking class by Smita.')} target="_blank" rel="noreferrer" className="btn-primary">
+              <a href={whatsappLink('Hi De Kafé Lounge! I would like to enquire about the baking class by Smitaa.')} target="_blank" rel="noreferrer" className="btn-primary">
                 ENQUIRE ON WHATSAPP <ArrowRight size={16} />
               </a>
               <Link to="/baking-classes" className="btn-secondary">

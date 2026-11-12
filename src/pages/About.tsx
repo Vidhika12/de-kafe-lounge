@@ -15,7 +15,7 @@ const PILLARS = [
   {
     icon: CakeSlice,
     title: 'LAYERED IN LOVE BAKERY',
-    text: 'Custom cakes by co-founder Smita Singh — from classic teacakes to multi-tier designer showpieces, baked to order.'
+    text: 'Custom cakes by co-founder Smitaa Prakash — from classic teacakes to multi-tier designer showpieces, baked to order.'
   },
   {
     icon: PartyPopper,
@@ -63,7 +63,7 @@ export const About: React.FC = () => {
               <span className="eyebrow-gold">SUNLIGHT BY DAY, LANTERN GLOW BY NIGHT</span>
               <h3 className="split-heading">A GLASSHOUSE CAFE ON KALKERE MAIN ROAD</h3>
               <p className="feature-text">
-                <strong>De Kafé Lounge</strong> was built by <strong>Ms. Smita Singh</strong> and <strong>Mr. Augusteen</strong>
+                <strong>De Kafé Lounge</strong> was built by <strong>Ms. Smitaa Prakash</strong> and <strong>Mr. Augusteen</strong>
                 with one simple idea: give the neighbourhood a beautiful place to slow down, eat well and celebrate the moments that matter.
               </p>
               <p className="feature-text">
@@ -131,7 +131,7 @@ export const About: React.FC = () => {
               on top. From unicorns and castles for little ones to three-tier floral anniversary cakes, no two are alike.
             </p>
             <p className="feature-text" style={{ marginBottom: '26px' }}>
-              Follow Smita’s latest creations on Instagram, or browse a few favourites in our lookbook.
+              Follow Smitaa’s latest creations on Instagram, or browse a few favourites in our lookbook.
             </p>
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Link to="/cakes" className="btn-primary">VIEW CAKE LOOKBOOK <ArrowRight size={16} /></Link>

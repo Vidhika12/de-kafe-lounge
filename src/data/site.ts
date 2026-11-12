@@ -17,10 +17,10 @@ export const SITE = {
   instagramHandle: '@dekafe.lounge',
   instagram: 'https://www.instagram.com/dekafe.lounge/',
   bakeryName: 'Layered in Love',
-  bakeryOwner: 'Smita Singh',
+  bakeryOwner: 'Smitaa Prakash',
   secondPartner: 'Augusteen',
-  bakeryHandle: '@layered_in_love_by_smita',
-  bakeryInstagram: 'https://www.instagram.com/layered_in_love_by_smita/',
+  bakeryHandle: '@layered_in_love_by_smitaa',
+  bakeryInstagram: 'https://www.instagram.com/layered_in_love_by_smitaa/',
   mapsLink:
     'https://www.google.com/maps/search/?api=1&query=De+Kafe+Lounge+Kalkere+Main+Road+Rammurthy+Nagar+Bengaluru',
   mapEmbed:
@@ -70,7 +70,7 @@ export const GOOGLE_REVIEWS = [
     meta: 'Daughter’s birthday',
     rating: 5,
     review:
-      'We celebrated my daughter’s birthday at De Kafe’Lounge, and it turned out to be a wonderful experience… Mrs. Smita was incredibly warm and supportive throughout the planning and celebration. The buffet spread was excellent, and all our guests genuinely enjoyed the food. The highlight of the evening was the cake, specially baked by Mrs. Smita herself—it looked beautiful and tasted amazing.'
+      'We celebrated my daughter’s birthday at De Kafe’Lounge, and it turned out to be a wonderful experience… Mrs. Smitaa was incredibly warm and supportive throughout the planning and celebration. The buffet spread was excellent, and all our guests genuinely enjoyed the food. The highlight of the evening was the cake, specially baked by Mrs. Smitaa herself—it looked beautiful and tasted amazing.'
   },
   {
     name: 'krishnadevaraya G',

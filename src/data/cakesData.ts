@@ -1,5 +1,5 @@
 // ============================================================
-// LAYERED IN LOVE — custom cake lookbook by Smita Singh.
+// LAYERED IN LOVE — custom cake lookbook by Smitaa Prakash.
 // Every cake is made to order, so no prices are listed.
 // To add a cake: drop the photo in /public/images and add an entry below.
 // ============================================================

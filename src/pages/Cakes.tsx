@@ -114,7 +114,7 @@ export const Cakes: React.FC = () => {
               <CakeIcon size={44} style={{ color: 'var(--color-gold)' }} />
               <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', marginTop: '12px' }}>NO CAKES FOUND</h4>
               <p style={{ color: 'var(--color-text-on-dark-muted)', fontSize: '0.88rem' }}>
-                Nothing matched “{query}” — but Smita can make it! Message us your idea.
+                Nothing matched “{query}” — but Smitaa can make it! Message us your idea.
               </p>
               <button type="button" className="btn-secondary" onClick={() => { setQuery(''); setCategory('all'); }}>
                 RESET FILTERS
@@ -171,7 +171,7 @@ export const Cakes: React.FC = () => {
                 DESIGN YOUR OWN CAKE
               </h3>
               <p style={{ fontSize: '0.9rem', color: 'var(--color-text-on-dark-muted)', lineHeight: '1.7' }}>
-                Send us a reference picture, your theme, flavour and date — Smita will design it from scratch. Please
+                Send us a reference picture, your theme, flavour and date — Smitaa will design it from scratch. Please
                 place designer and multi-tier orders in advance so there’s time to craft every detail.
               </p>
             </div>

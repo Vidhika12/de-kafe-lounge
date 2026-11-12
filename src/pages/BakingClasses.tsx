@@ -36,7 +36,7 @@ export const BakingClasses: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const message = [
-      'Hi De Kafé Lounge! I would like to enquire about the baking classes by Smita.',
+      'Hi De Kafé Lounge! I would like to enquire about the baking classes by Smitaa.',
       '',
       `Name: ${form.name}`,
       `Phone: ${form.phone}`,
@@ -57,7 +57,7 @@ export const BakingClasses: React.FC = () => {
         <div className="container split-grid">
           <div className="workshops-copy">
             <span className="section-subtitle" style={{ textAlign: 'left' }}>OFFLINE WORKSHOPS · LAYERED IN LOVE</span>
-            <h2 className="section-title" style={{ textAlign: 'left', fontSize: 'clamp(2rem, 4vw, 2.8rem)' }}>BAKING CLASSES BY SMITA</h2>
+            <h2 className="section-title" style={{ textAlign: 'left', fontSize: 'clamp(2rem, 4vw, 2.8rem)' }}>BAKING CLASSES BY SMITAA PRAKASH</h2>
             <div className="gold-divider" style={{ margin: '0 0 20px' }} />
             <p className="feature-text">
               Learn to bake with <strong>{SITE.bakeryOwner}</strong>, the baker behind <strong>Layered in Love</strong> and every
@@ -159,7 +159,7 @@ export const BakingClasses: React.FC = () => {
               ))}
             </div>
             <Link to="/cakes" className="btn-secondary">
-              SEE SMITA’S CAKES <ArrowRight size={16} />
+              SEE SMITAA’S CAKES <ArrowRight size={16} />
             </Link>
           </div>
         </div>
