@@ -8,6 +8,7 @@ import { SITE, whatsappLink, EVENT_TAGLINE, GOOGLE_RATING, GOOGLE_REVIEWS, GOOGL
 import { EventServices, EventServicesInline } from '../components/EventServices';
 import { InstagramIcon, WhatsAppIcon } from '../components/Icons';
 import { LoopVideo } from '../components/LoopVideo';
+import { FeedbackForm } from '../components/FeedbackForm';
 import { Check, ArrowRight, Calendar, Star, Coffee, MapPin, Flame } from 'lucide-react';
 
 // Full-resolution, wide photos only (portrait photos look blurry when stretched across a wide screen)
@@ -364,8 +365,8 @@ export const Home: React.FC = () => {
       <section className="bakery-feature">
         <div className="container bakery-feature-grid">
           <div className="bakery-collage">
-            <img src="/images/cake-anniversary.webp" alt="Three-tier anniversary cake with fresh roses" className="collage-main" loading="lazy" />
-            <img src="/images/cake-unicorn.webp" alt="Pastel unicorn cake" className="collage-side collage-top" loading="lazy" />
+            <img src="/images/cake-floral-tower.webp" alt="Enchanted floral tower birthday cake by Layered in Love" className="collage-main" loading="lazy" />
+            <img src="/images/cake-princess-castle.webp" alt="Princess castle cake with fairy-light clouds" className="collage-side collage-top" loading="lazy" />
             <img src="/images/cake-birthday-boy.webp" alt="Red and gold first-birthday cake" className="collage-side collage-bottom" loading="lazy" />
           </div>
 
@@ -474,7 +475,7 @@ export const Home: React.FC = () => {
             </div>
           </div>
           <div className="hamper-photos">
-            <figure className="hamper-photo main"><img src="/images/hamper-kraft.webp" alt="Kraft gift hamper with cream tulle and a white rosette" loading="lazy" /></figure>
+            <figure className="hamper-photo main"><img src="/images/hamper-pink-basket.webp" alt="Jute basket hamper with cookie jars, pink net and a gold-wire bloom" loading="lazy" /></figure>
             <figure className="hamper-photo side"><img src="/images/hamper-embroidered.webp" alt="Embroidered gift box hamper with a gold organza bow" loading="lazy" /></figure>
             <span className="hamper-tag">Diwali 2026</span>
           </div>
@@ -603,6 +604,26 @@ export const Home: React.FC = () => {
               READ ALL {GOOGLE_RATING.count} REVIEWS ON GOOGLE <ArrowRight size={16} />
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* FEEDBACK */}
+      <section className="feedback-section" id="feedback">
+        <div className="container feedback-grid">
+          <div>
+            <span className="script-accent" style={{ textAlign: 'left' }}>We’re listening</span>
+            <span className="section-subtitle" style={{ textAlign: 'left' }}>SHARE YOUR FEEDBACK</span>
+            <h2 className="section-title" style={{ textAlign: 'left', fontSize: 'clamp(2rem, 4vw, 2.8rem)' }}>HOW WAS YOUR VISIT?</h2>
+            <div className="gold-divider" style={{ margin: '0 0 20px' }} />
+            <p className="feature-text">
+              Your feedback helps us get better every day. Rate your experience, tell us what you loved or what we could
+              improve, and it goes straight to our team.
+            </p>
+            <p className="feature-text">
+              Celebrated with us recently? We’d love to hear how your event, cake or hampers turned out.
+            </p>
+          </div>
+          <FeedbackForm />
         </div>
       </section>
 

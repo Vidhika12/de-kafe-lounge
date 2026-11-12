@@ -63,6 +63,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/gallery">Gallery</Link></li>
               <li><Link to="/reservation">Book a Table</Link></li>
               <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/feedback">Share Feedback</Link></li>
             </ul>
           </div>
 

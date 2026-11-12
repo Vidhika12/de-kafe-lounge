@@ -11,6 +11,16 @@ import { EVENT_TAGLINE } from '../data/site';
 import { LoopVideo } from '../components/LoopVideo';
 
 
+const CUISINES = [
+  { name: 'North Indian', hint: 'Curries, breads, biryani & tandoor favourites' },
+  { name: 'South Indian', hint: 'Classic home-style dishes & tiffin' },
+  { name: 'Continental', hint: 'Grills, pastas, sandwiches & salads' },
+  { name: 'Chinese & Pan-Asian', hint: 'Starters, noodles, rice & more' },
+  { name: 'Snacks & Platters', hint: 'Finger food for parties & meetings' },
+  { name: 'Desserts & Cakes', hint: 'Including custom cakes by Layered in Love' },
+  { name: 'Anything Else?', hint: 'Just ask — we’ll plan it with you' }
+];
+
 export const Events: React.FC = () => {
   return (
     <main>
@@ -26,6 +36,35 @@ export const Events: React.FC = () => {
             description="No juggling vendors. From the venue and catering to décor, customised cakes and even return gifts — we handle it all, so you can simply enjoy your celebration."
           />
           <EventServices />
+
+          {/* Catering: every cuisine */}
+          <div className="cuisine-note" id="catering-cuisines">
+            <div className="cuisine-note-copy">
+              <span className="script-accent" style={{ textAlign: 'left' }}>Catering, your way</span>
+              <h3 className="split-heading" style={{ marginBottom: '12px' }}>WE CATER EVERY CUISINE</h3>
+              <p className="feature-text" style={{ marginBottom: '18px' }}>
+                From a North Indian spread to South Indian classics, Continental, Chinese and more, our kitchen builds the
+                menu around your guests. Tell us what you have in mind and we’ll put together a menu and quote to suit your
+                event.
+              </p>
+              <a
+                href={whatsappLink('Hi De Kafé Lounge! I would like to enquire about catering for my event.\n\nCuisine(s): \nDate: \nApprox. guests: ')}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-primary"
+              >
+                <WhatsAppIcon size={16} /> ENQUIRE ABOUT CATERING
+              </a>
+            </div>
+            <ul className="cuisine-list">
+              {CUISINES.map((c) => (
+                <li key={c.name} className="cuisine-item">
+                  <span className="cuisine-name">{c.name}</span>
+                  <span className="cuisine-hint">{c.hint}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 

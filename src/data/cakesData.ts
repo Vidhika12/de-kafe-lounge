@@ -28,6 +28,26 @@ export const categoryLabel = (id: CakeCategory): string =>
 
 export const CAKES_DATA: CakeItem[] = [
   {
+    id: 'floral-tower',
+    name: 'Enchanted Floral Tower',
+    category: 'kids',
+    image: '/images/cake-floral-tower.webp',
+    description:
+      'A towering birthday showpiece with a fairy-tale door, a little fondant doll in her own garden, blooms in every colour, butterflies and pearl spheres.',
+    highlights: ['Floating tiers', 'Fondant doll', 'Floral cascade'],
+    badge: 'New'
+  },
+  {
+    id: 'princess-castle',
+    name: 'Princess Castle in the Clouds',
+    category: 'kids',
+    image: '/images/cake-princess-castle.webp',
+    description:
+      'Gold-tipped castle towers floating on a cloud with twinkling fairy lights, above pastel tiers with a storybook door, butterflies and fresh roses.',
+    highlights: ['Fairy-light cloud', 'Castle towers', 'Fresh roses'],
+    badge: 'New'
+  },
+  {
     id: 'superhero',
     name: 'Superhero Tier Cake',
     category: 'kids',

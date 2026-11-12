@@ -13,6 +13,7 @@ import { Hampers } from './pages/Hampers';
 import { Gallery } from './pages/Gallery';
 import { Reservation } from './pages/Reservation';
 import { Contact } from './pages/Contact';
+import { Feedback } from './pages/Feedback';
 
 
 
@@ -30,6 +31,7 @@ export const App: React.FC = () => {
             <Route path="/cakes" element={<Cakes />} />
             <Route path="/baking-classes" element={<BakingClasses />} />
             <Route path="/hampers" element={<Hampers />} />
+            <Route path="/feedback" element={<Feedback />} />
             <Route path="/events" element={<Events />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/reservation" element={<Reservation />} />

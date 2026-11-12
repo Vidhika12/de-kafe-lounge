@@ -162,6 +162,8 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   { id: 'g26', title: 'Embroidered Keepsake Hamper', category: 'celebrations', categoryLabel: 'Gift Hampers', image: '/images/hamper-embroidered.webp' },
   { id: 'g27', title: 'Festive Wooden Tray Hamper', category: 'celebrations', categoryLabel: 'Gift Hampers', image: '/images/hamper-red-tray.webp' },
   { id: 'g28', title: 'Jute Basket Hamper', category: 'celebrations', categoryLabel: 'Gift Hampers', image: '/images/hamper-pink-basket.webp' },
+  { id: 'g29', title: 'Enchanted Floral Tower', category: 'cakes', categoryLabel: 'Layered in Love', image: '/images/cake-floral-tower.webp' },
+  { id: 'g30', title: 'Princess Castle Cake', category: 'cakes', categoryLabel: 'Layered in Love', image: '/images/cake-princess-castle.webp' },
   { id: 'g23', title: 'Crispy Corn', category: 'food', categoryLabel: 'From Our Kitchen', image: '/images/crispy-corn.webp' }
 ];
 
